@@ -17,7 +17,7 @@
 * [Tuples](basico/tuples.md)
 * [Map](basico/map.md)
 * [Estruturas](basico/estruturas.md)
-* [🔥 Pipes](basico/pipes.md)
+* [🔥 Pipes](em-breve/pipes.md)
 
 ## Avançado
 

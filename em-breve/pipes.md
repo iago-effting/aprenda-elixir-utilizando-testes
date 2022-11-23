@@ -1,7 +1,3 @@
----
-description: Em breve ...
----
-
 # 🔥 Pipes
 
 A tradução direta de `pipes` é `canos`.  Você pode pensar sobre`Canos` como os canos de sua casa.  Eles funcionam para passar água de um lugar para outro. No meio dessa passagem podemos por algumas coisas como, válvulas e filtros, até chegar em nossa torneira pronta para uso.&#x20;
@@ -224,7 +220,7 @@ Finished in 0.01 seconds (0.00s async, 0.01s sync)
 A utilização de pipes deixa o código mais elegante a fácil de entender. A leitura se torna mais fluída e colocar uma nova função no meio dele fica bem simples, enquanto sem pipes se torna repetitiva e verbosa.
 
 {% hint style="warning" %}
-Pipes
+**Pipes**
 
 As funções no pipe deve seguir uma ordem lógica. Quando a ordem é alterada, o resultado tende a se alterar também. Existem formas de programar pipes, onde isso não será um problema, mas em nosso exemplo, é. Tenha isso em mente.
 {% endhint %}
