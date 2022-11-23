@@ -17,13 +17,13 @@
 * [Tuples](basico/tuples.md)
 * [Map](basico/map.md)
 * [Estruturas](basico/estruturas.md)
+* [🔥 Pipes](basico/pipes.md)
 
 ## Avançado
 
 ## Em breve
 
-* [With](em-breve/with.md)
-* [Pipes](em-breve/pipes.md)
 * [Imutabilidade](em-breve/imutabilidade.md)
 * [Tratamento de erro](em-breve/tratamento-de-erro.md)
 * [ETS](em-breve/ets.md)
+* [With](em-breve/with.md)
