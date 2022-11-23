@@ -2,7 +2,7 @@
 
 A tradução direta de `pipes` é `canos`.  Você pode pensar sobre`Canos` como os canos de sua casa.  Eles funcionam para passar água de um lugar para outro. No meio dessa passagem podemos por algumas coisas como, válvulas e filtros, até chegar em nossa torneira pronta para uso.&#x20;
 
-A água seria nossos dados. As válvulas e filtros os redutores e a torneira seria nosso transformador.&#x20;
+A água seria nossos dados. As válvulas e filtros os redutores e a torneira seria nosso transformador.  A ideia aqui é passar dados a fim de realizar operações sequenciais para termos uma resposta final que precisamos.  `dados -> função 1 -> função 2 -> função N -> dados transformados pronto para uso.`
 
 Normalmente utilizamos funções dessa forma
 
