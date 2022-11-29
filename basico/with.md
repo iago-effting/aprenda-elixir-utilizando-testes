@@ -56,7 +56,6 @@ Quando falamos de composição aqui, estamos falando sobre juntar várias funç�
 Nada como um exemplo real para entender coisas complexas. Vamos imaginar que precisamos criar um usuário. Para essa funcionalidade precisamos:
 
 * Validar se os dados estão corretos;
-* Verificar se o usuário já existe;
 * Salvar no banco de dados
 * Atualizar usuário para ativo
 * Responder que tudo deu certo
