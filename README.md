@@ -3,7 +3,7 @@ cover: .gitbook/assets/wepik-photo-mode-20221022-14320.png
 coverY: 0
 ---
 
-# Introdução
+# 🔥 Introdução
 
 Quando eu estava aprendendo Go, encontrei [Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests/) e achei interessante. A utilização de teste em programas já é algo comum e resolve/evita problemas de manutenção, organização e execução. Deixando o código mais claro e fácil de entender.
 
@@ -14,6 +14,14 @@ Este livro ainda está sendo escrito, logo, algumas mudanças podem vir a serem 
 {% endhint %}
 
 Espero que gostem :)
+
+### Sobre Feedback
+
+Estou abrindo um novo canal de feedback, esse mais efetivo para entendimento do conteúdo.&#x20;
+
+Caso não tenha ficado claro a explicação ou exemplos, agora você pode abrir uma issue no link abaixo, explicando o que está acontecendo. Isso irá ajudará a refinar o conteúdo desse livro, obtendo uma melhor qualidade na didática.
+
+{% embed url="https://github.com/iago-effting/aprenda-elixir-utilizando-testes/issues" %}
 
 ### Contato
 

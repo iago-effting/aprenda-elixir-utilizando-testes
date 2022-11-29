@@ -1,12 +1,12 @@
 # Table of contents
 
-* [Introdução](README.md)
+* [🔥 Introdução](README.md)
 
 ## Primeiros passos em Elixir
 
-* [Instalação](primeiros-passos-em-elixir/instalacao.md)
 * [Ferramenta Mix](primeiros-passos-em-elixir/ferramenta-mix.md)
 * [Meu "Hello, world"](primeiros-passos-em-elixir/meu-hello-world.md)
+* [Instalação](primeiros-passos-em-elixir/instalacao.md)
 
 ## Básico
 
@@ -17,7 +17,8 @@
 * [Tuples](basico/tuples.md)
 * [Map](basico/map.md)
 * [Estruturas](basico/estruturas.md)
-* [🔥 Pipes](em-breve/pipes.md)
+* [Pipes](em-breve/pipes.md)
+* [🔥 With](basico/with.md)
 
 ## Avançado
 
@@ -26,4 +27,3 @@
 * [Imutabilidade](em-breve/imutabilidade.md)
 * [Tratamento de erro](em-breve/tratamento-de-erro.md)
 * [ETS](em-breve/ets.md)
-* [With](em-breve/with.md)

@@ -1,4 +1,4 @@
-# 🔥 Pipes
+# Pipes
 
 A tradução direta de `pipes` é `canos`.  Você pode pensar sobre`Canos` como os canos de sua casa.  Eles funcionam para passar água de um lugar para outro. No meio dessa passagem podemos por algumas coisas como, válvulas e filtros, até chegar em nossa torneira pronta para uso.&#x20;
 
