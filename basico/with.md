@@ -1,8 +1,4 @@
----
-description: Em breve ...
----
-
-# 🔥 With
+# With
 
 Eu realmente acho interessante a declaração `with`. Ele deixa as coisas mais claras e podemos também controlar o fluxo do código. Ela é baseada na utilização de funções encadeadas que podemos controlar em caso de sucesso e em caso de algo der errado.&#x20;
 
@@ -285,7 +281,8 @@ Não utilizaremos banco de dados aqui, mas iremos criar uma função para simula
 <strong>       assert result.is_inserted == true
 </strong>    end
   end
-end</code></pre>
+end
+</code></pre>
 
 Se rodarmos esse teste, teremos um erro
 
@@ -381,7 +378,8 @@ Continuando. Precisamos agora salvar em nosso banco de dados falso e retornar o 
 </strong><strong>
 </strong><strong>    {:ok, data}
 </strong><strong>  end
-</strong>end</code></pre>
+</strong>end
+</code></pre>
 
 Na função `save/1` retorno apenas como sucesso, mas se você realmente quiser por isso em um banco, e queira retornar um `{:error, reason}` também irá funcionar, o with cuidará do retorno do error.
 
@@ -419,7 +417,8 @@ Começamos pelo teste, adicionado a afirmação em nosso teste de sucesso que es
 
     # ...
   end
-end</code></pre>
+end
+</code></pre>
 
 ```shell
 mix test test/users_test.exs

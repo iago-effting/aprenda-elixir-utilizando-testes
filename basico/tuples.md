@@ -17,6 +17,7 @@ Exemplo :
 <strong>    assert tuple == {1, :ok, %{name: "iago"}, 10}
 </strong>  end
 end
+
 </code></pre>
 
 ```shell
@@ -122,7 +123,8 @@ Precisamos criar nosso módulo com nossa função
     result = %{id: id, description: description}
 <strong>    {:ok, result} # temos a tupla com o :ok simbolizando que tudo deu certo
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 ```shell
 mix test test/vendor_test.exs
@@ -197,7 +199,8 @@ Para resolver esse problema, precisamos criar uma nova função de mesmo nome qu
   def register(_id, _description) do
 <strong>    {:error, "Params are not valid"} # temos a tupla com :error, algo deu errado
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 Basta rodar e ver que agora temos o tratamento correto.
 

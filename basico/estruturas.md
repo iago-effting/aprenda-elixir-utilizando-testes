@@ -33,7 +33,8 @@ Claro, ainda não temos esse módulo e estrutura criados. Então vamos cria-los 
 
 <pre class="language-elixir" data-title="lib/user.ex" data-line-numbers><code class="lang-elixir">defmodule User do
 <strong>  defstruct [:id, :name]
-</strong>end</code></pre>
+</strong>end
+</code></pre>
 
 Feito isso, basta rodar o teste e tudo funcionará.
 
@@ -64,6 +65,7 @@ Diferente do Map, não podemos inserir valores na utilização da struct. Exempl
     end
   end
 end
+
 </code></pre>
 
 Ao rodar esse teste, irá gerar um relatório de erro de compilação acusando que `field_does_not_exist_in_structure` não foi encontrado na estrutura `User.__struct__/1`.

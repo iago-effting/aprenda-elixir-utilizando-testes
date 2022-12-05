@@ -20,7 +20,8 @@ Funções nomeadas devem existir somente dentro de módulos e são declaradas co
   end
   
 <strong>  defp create_session(user), do: # ...
-</strong>end</code></pre>
+</strong>end
+</code></pre>
 
 Vamos criar um novo teste em nosso projeto onde iremos fazer uma soma simples. Na pasta `test` crie um novo arquivo chamado `math_test.exs` e nele utilizaremos nosso primeiro `describe`, descrevendo o que está sendo testado.
 
@@ -47,6 +48,7 @@ Podemos tirar algumas vantagens quando utilizamos describe. Uma delas é servir 
 </strong>    # ...
   end
 end
+
 </code></pre>
 
 Criaremos o primeiro bloco de teste  para quando passarmos os parâmetros corretos.&#x20;
@@ -75,6 +77,7 @@ Vamos adicionar ao código o bloco de teste usando a função `test/2`
     end
   end
 end
+
 </code></pre>
 
 Precisamos agora entender o que seria um teste bem sucedido aqui e para isso devemos seguir algumas etapas do TDD para se tornar mais simples
@@ -200,7 +203,8 @@ Agora podemos implementar nosso código real. Vamos fazer a soma e retornar o va
   def sum(x, y) do
 <strong>    x + y
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 Não precisamos de nenhuma palavra chave para indicar que um valor vai ser retornado na função. Elixir faz isso na última linha da função.
 

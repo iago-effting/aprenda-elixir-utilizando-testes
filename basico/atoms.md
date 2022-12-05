@@ -50,7 +50,8 @@ Atoms podem ser definidos dinamicamente, para isso poder fazer de duas formas:
 </strong>
     assert new_atom == :noise
   end
-end</code></pre>
+end
+</code></pre>
 
 ```shell
 mix test 
@@ -72,7 +73,8 @@ Finished in 0.02 seconds (0.00s async, 0.02s sync)
 </strong>
     assert new_atom == :noise
   end
-end</code></pre>
+end
+</code></pre>
 
 ```shell
 mix test
@@ -101,6 +103,7 @@ Temos algumas formas de evitar esse tipo de problema. Uma forma é a utilizaçã
     assert new_atom == :atom_that_does_not_exist
   end
 end
+
 </code></pre>
 
 ```shell
@@ -132,7 +135,8 @@ E caso ele já tenha sido criado, não teremos problemas
 </strong>
     assert new_atom == :atom_that_does_exist
   end
-end</code></pre>
+end
+</code></pre>
 
 ```shell
 mix test

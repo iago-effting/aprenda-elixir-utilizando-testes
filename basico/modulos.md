@@ -31,7 +31,8 @@ No arquivo de teste podemos ver como o código é executado utilizando a chamada
   test "greets the world" do
 <strong>    assert HelloWorld.hello() == :new_world # Chamada do modulo e função
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 Podemos definir infinitas funções dentro de um modulo (mas não façam isso, precisamos de organização certo? hehe). Alguns bons exemplos de módulos:
 
@@ -63,7 +64,8 @@ Vamos alterar nosso programa para concatenar o atributo de módulo em nossa resp
   test "greets the world" do
 <strong>    assert HelloWorld.hello() == "Hello, new world"
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 Rode o programa e voce terá o relatório de erro
 
@@ -88,6 +90,7 @@ Precisamos alterar nosso programa para atender a nova resposta e para isso, util
 <strong>    @message # Utilização do atributo de módulo
 </strong>  end
 end
+
 </code></pre>
 
 Basta rodar novamente o teste e tudo estará funcionando.

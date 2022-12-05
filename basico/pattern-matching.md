@@ -19,7 +19,8 @@ Vamos ao teste.
     assert person.name == "My Name"
     assert person.genre == :no_binary
   end
-end</code></pre>
+end
+</code></pre>
 
 Rodando esse teste, obtemos o relatório de erro:
 
@@ -92,7 +93,8 @@ Algo assim:
 <strong>    assert new_name == "My Name"
 </strong><strong>    assert new_genre == :no_binary
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 Sem pattern matching, voce precisaria continuar com o valor `person.name` ou atribuir ele a uma nova variável `new_name = person.name`. O que por fim, daria na utilização do mesmo.
 
@@ -110,7 +112,8 @@ Com pattern matching é diferente, você pode obter diretamente o valor que quer
 <strong>    assert new_name == "My Name"
 </strong><strong>    assert new_genre == :no_binary
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 O `new_name` e `new_genre` estão na posição onde está onde deveriam estar os valores certo? Ele é um espelho do que tem dentro da função, porem, no lugar dos valores, temos a definição de uma nova variável e é ai que o matching acontece. No nosso caso, estamos so dizendo que aceitamos qualquer valor que siga a estrutura de dentro do map, tendo `name` sendo chamado agora de `new_name` e a mesma coisa acontece com `new_genre`.&#x20;
 
@@ -295,6 +298,7 @@ Isso funcionária, mas se tornaria uma bagunça se precisarmos colocar mais tipo
 </strong>    "Rendering txt"
   end
 end
+
 </code></pre>
 
 Na definição da função, no segundo parâmetro, ao invés de colocar uma variável, setamos diretamente o valor. Por regra do Pattern matching, o valor deve ser igual para ele ser realizado com sucesso e ai executar a função. A primeira função `render` so irá ser executada, quando o segundo parâmetro for `:txt` e a segunda função apenas quando for `:pdf`.
@@ -327,6 +331,7 @@ Caso nenhuma dessas condições seja cumprida, uma exceção é lançada. Para e
     end
   end
 end
+
 </code></pre>
 
 executando o teste, temos o seguinte relatório:
@@ -376,7 +381,8 @@ O próprio relatório nos da as opções válidas com `:txt` e `:pdf.` Vamos cor
 <strong>  def render(_id, unsupported) do
 </strong><strong>    "This type #{unsupported} is not supported"
 </strong><strong>  end
-</strong>end</code></pre>
+</strong>end
+</code></pre>
 
 Na ultima função, troquei novamente o segundo parâmetro para variável, assim ele não espera um valor especifico e consegue executar a função. Tendo isso em mãos, criamos uma frase para avisar que o tipo informado não é válido.
 
