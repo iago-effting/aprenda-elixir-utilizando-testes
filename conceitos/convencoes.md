@@ -1,5 +1,15 @@
 # 🔥 Convenções
 
+Em primeira vista, as convenções podem parecer so uma escolha feita por um time de desenvolvimento. Mas ela é muito mais do que isso. É a definição de como algo deve ser feito, porém, criado por uma comunidade que está imerso no código da linguage, sabendo que se isso não for respeitado, podemos ter grandes problemas no futuro.
+
+**Ganhamos algumas coias ao utilizar convenções:**
+
+1. Padronização de código;
+2. Facilidade de membros de fora do projeto, conseguirem entender o que esta acontecendo;
+3. Várias bibliotecas seguem o mesmo padrão, então você tera o entendimento mais rápido e de forma fácil, conseguirá adicionar ao seu código sem mudar a estrategia ou organização.
+
+Vamos a algumas convenções
+
 ### Tupla `{:ok, result}` e `{:error, reason}`
 
 Podemos facilmente entender que uma função não foi executada com sucesso, quando em seu retorno, temos essa estrutura `{:error, "Something went wrong"}`. Ou que tudo deu certo `{:ok, %{...}}`. Essa é uma convenção adotada pela comunidade elixir para facilitar a identificação de erros e sucessos, podendo tomar alguma ação com base nisso.
