@@ -70,6 +70,14 @@ Tuplas também podem ter valores complexos como `structures` ou `maps`.
 
 ### Utilização de tupla de `:ok` e `:error` em uma função
 
+{% hint style="warning" %}
+**Convenções**
+
+Temos uma seção convenções da linguagem que é bem importante o entendimento. Tupla :ok/:error é uma delas. \
+\
+[Acesse aqui](../conceitos/convencoes.md)
+{% endhint %}
+
 Vamos supor que faremos uma operação de cadastro em um fornecedor. Após a operação precisamos informar se a operação foi bem sucedida ou não. Para facilitar chamarei esse modulo de `Vendor` e a função de `register`. No registro precisamos apenas de um ID e uam descrição. Então passaremos dois parâmetros para a função. Queremos como retorno, a utilização de tuplas com `:ok` e :`error` chamado de [error\_handling](https://elixirschool.com/pt/lessons/intermediate/error\_handling) (ou, tratamento de erro).
 
 {% code title="test/register_test.exs" lineNumbers="true" %}
