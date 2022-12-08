@@ -4,7 +4,7 @@
 
 ## Primeiros passos em Elixir
 
-* [🔥 Linguagem](primeiros-passos-em-elixir/linguagem.md)
+* [Linguagem](primeiros-passos-em-elixir/linguagem.md)
 * [Ferramenta Mix](primeiros-passos-em-elixir/ferramenta-mix.md)
 * [Meu "Hello, world"](primeiros-passos-em-elixir/meu-hello-world.md)
 * [Instalação](primeiros-passos-em-elixir/instalacao.md)
@@ -23,10 +23,10 @@
 
 ## Conceitos
 
-* [🔥 Imutabilidade](conceitos/imutabilidade.md)
+* [Imutabilidade](conceitos/imutabilidade.md)
+* [🔥 Convenções](conceitos/convencoes.md)
 
 ## Em breve
 
 * [ETS](em-breve/ets.md)
-* [Tratamento de erro](em-breve/tratamento-de-erro.md)
 * [Concorrência](em-breve/concorrencia.md)

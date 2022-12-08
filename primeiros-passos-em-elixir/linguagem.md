@@ -1,4 +1,4 @@
-# 🔥 Linguagem
+# Linguagem
 
 ir é uma linguagem dinâmica e funcional. Ela foi projetada para a construção de aplicações escaláveis e de fácil manutenção, possuindo um cinto de utilidades moderno e uma base cientifica refinada.&#x20;
 

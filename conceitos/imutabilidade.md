@@ -1,4 +1,4 @@
-# 🔥 Imutabilidade
+# Imutabilidade
 
 {% hint style="warning" %}
 **Aviso sobre essa categoria**
