@@ -1,6 +1,6 @@
 # 🔥 Convenções
 
-Em primeira vista, as convenções podem parecer so uma escolha feita por um time de desenvolvimento. Mas ela é muito mais do que isso. É a definição de como algo deve ser feito, porém, criado por uma comunidade que está imerso no código da linguage, sabendo que se isso não for respeitado, podemos ter grandes problemas no futuro.
+Em primeira vista, as convenções podem parecer apenas uma escolha feita por um time de desenvolvimento. Mas ela é muito mais do que isso. É a definição de como algo deve ser feito, porém, criado por uma comunidade que está imerso no código da linguagem, sabendo que se isso não for respeitado, podemos ter grandes problemas no futuro.
 
 **Ganhamos algumas coias ao utilizar convenções:**
 
