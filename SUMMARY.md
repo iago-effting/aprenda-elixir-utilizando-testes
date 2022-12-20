@@ -20,13 +20,16 @@
 * [Estruturas](basico/estruturas.md)
 * [Pipes](em-breve/pipes.md)
 * [With](basico/with.md)
+* [🔥 Condicionais](basico/condicionais/README.md)
+  * [🔥 if / else](basico/condicionais/if-else.md)
 
 ## Conceitos
 
 * [Imutabilidade](conceitos/imutabilidade.md)
-* [🔥 Convenções](conceitos/convencoes.md)
+* [Convenções](conceitos/convencoes.md)
 
 ## Em breve
 
+* [Let it crash (Deixe quebrar)](em-breve/let-it-crash-deixe-quebrar.md)
 * [ETS](em-breve/ets.md)
 * [Concorrência](em-breve/concorrencia.md)
