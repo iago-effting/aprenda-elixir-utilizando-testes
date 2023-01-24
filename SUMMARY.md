@@ -31,5 +31,3 @@
 ## Em breve
 
 * [Let it crash (Deixe quebrar)](em-breve/let-it-crash-deixe-quebrar.md)
-* [ETS](em-breve/ets.md)
-* [Concorrência](em-breve/concorrencia.md)
