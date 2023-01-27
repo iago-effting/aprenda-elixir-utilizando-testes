@@ -5,9 +5,9 @@
 ## Primeiros passos em Elixir
 
 * [Linguagem](primeiros-passos-em-elixir/linguagem.md)
+* [Instalação](primeiros-passos-em-elixir/instalacao.md)
 * [Ferramenta Mix](primeiros-passos-em-elixir/ferramenta-mix.md)
 * [Meu "Hello, world"](primeiros-passos-em-elixir/meu-hello-world.md)
-* [Instalação](primeiros-passos-em-elixir/instalacao.md)
 
 ## Básico
 
