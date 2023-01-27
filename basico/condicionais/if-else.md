@@ -1,6 +1,6 @@
-# 🔥 if / else
+# if / else
 
-O mais popular no mundo do desenvolvimento é o if/else. Definido com `if/2` ele espera uma expressão e um bloco de execução inicado com `do`.
+O mais popular no mundo do desenvolvimento é o `if/else`. Definido com `if/2` ele espera uma expressão e um bloco de execução inicado com `do`.
 
 ```elixir
 if some_expression do

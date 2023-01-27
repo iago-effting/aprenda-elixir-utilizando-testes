@@ -7,6 +7,7 @@
 * [Linguagem](primeiros-passos-em-elixir/linguagem.md)
 * [Instalação](primeiros-passos-em-elixir/instalacao.md)
 * [Ferramenta Mix](primeiros-passos-em-elixir/ferramenta-mix.md)
+* [iEx](primeiros-passos-em-elixir/iex.md)
 * [Meu "Hello, world"](primeiros-passos-em-elixir/meu-hello-world.md)
 
 ## Básico
@@ -20,8 +21,9 @@
 * [Estruturas](basico/estruturas.md)
 * [Pipes](em-breve/pipes.md)
 * [With](basico/with.md)
-* [🔥 Condicionais](basico/condicionais/README.md)
-  * [🔥 if / else](basico/condicionais/if-else.md)
+* [Condicionais](basico/condicionais/README.md)
+  * [if / else](basico/condicionais/if-else.md)
+  * [🔥 cond](basico/condicionais/cond.md)
 
 ## Conceitos
 
