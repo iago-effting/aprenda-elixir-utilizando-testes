@@ -1,6 +1,6 @@
 # 🔥 cond
 
-O `case/2` nos ajuda a **condicionar um valor de acordo com diferentes valores de entrada**. Caindo em cada caso especificado pelo valor esperado. Normalmente utilizando [pattern matching](../pattern-matching.md).&#x20;
+O `cond/0` nos ajuda a **condicionar um valor de acordo com diferentes valores de entrada**. Caindo em cada caso especificado pelo valor esperado. Normalmente utilizando [pattern matching](../pattern-matching.md).&#x20;
 
 A definição dele segue a palavra chave `cond` seguido de `do`. Todo o controle de fluxo é tido dentro dele, exemplo:
 
