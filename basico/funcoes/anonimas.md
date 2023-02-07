@@ -70,8 +70,6 @@ Enum.map([1, 2, 3], fn x -> x * 2 end
 ```
 {% endcode %}
 
-A função
-
 ### Conclusão
 
 Funções anônimas podem parecer estranhas em primeiro contato. Mas uma vez que você esteja lidando com problemas reais em seu programa, verá que ele se torna útil em diversas ocasiões.
