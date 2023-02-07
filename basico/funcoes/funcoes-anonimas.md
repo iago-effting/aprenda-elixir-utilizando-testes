@@ -1,6 +1,6 @@
-# Anônimas
+# Funções anônimas
 
-Funções anônimas funcionam parecidos com as [funções nomeadas](nomeadas.md). Enquanto a função nomeada possui um nome próprio, a função anonima possui seu comportamento, podendo ser atribuido a qualquer variável. Vamos criar um teste simples, um usando uma função nomeada, criado no capítulo [Funções nomeadas](nomeadas.md). Depois criaremos um segundo que faz a mesma coisa, porém, como uma função anônima.
+Funções anônimas funcionam parecidos com as [funções nomeadas](funcoes-nomeadas.md). Enquanto a função nomeada possui um nome próprio, a função anonima possui seu comportamento, podendo ser atribuido a qualquer variável. Vamos criar um teste simples, um usando uma função nomeada, criado no capítulo [Funções nomeadas](funcoes-nomeadas.md). Depois criaremos um segundo que faz a mesma coisa, porém, como uma função anônima.
 
 <pre class="language-elixir" data-title="" data-line-numbers><code class="lang-elixir">defmodule FunctionTest do
   use ExUnit.Case
