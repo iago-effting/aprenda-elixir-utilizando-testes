@@ -1,4 +1,4 @@
-# Nomeadas
+# Funções nomeadas
 
 A função é o principal elemento das linguagens funcionais (grande surpresa an?) e tem como objetivo realizar comportamentos.&#x20;
 

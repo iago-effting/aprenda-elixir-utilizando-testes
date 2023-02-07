@@ -7,15 +7,15 @@
 * [Linguagem](primeiros-passos-em-elixir/linguagem.md)
 * [Instalação](primeiros-passos-em-elixir/instalacao.md)
 * [Ferramenta Mix](primeiros-passos-em-elixir/ferramenta-mix.md)
-* [iEx](primeiros-passos-em-elixir/iex.md)
 * [Meu "Hello, world"](primeiros-passos-em-elixir/meu-hello-world.md)
+* [iEx](primeiros-passos-em-elixir/iex.md)
 
 ## Básico
 
 * [Módulos](basico/modulos.md)
 * [Funções](basico/funcoes.md)
-  * [Funções nomeadas](basico/funcoes/funcoes-nomeadas.md)
-  * [Funções anônimas](basico/funcoes/funcoes-anonimas.md)
+  * [Funções nomeadas](basico/funcoes/nomeadas.md)
+  * [Funções anônimas](basico/funcoes/anonimas.md)
 * [Atoms](basico/atoms.md)
 * [Pattern Matching](basico/pattern-matching.md)
 * [Tuples](basico/tuples.md)
