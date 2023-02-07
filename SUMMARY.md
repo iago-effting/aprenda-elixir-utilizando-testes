@@ -22,8 +22,9 @@
 * [Pipes](em-breve/pipes.md)
 * [With](basico/with.md)
 * [Condicionais](basico/condicionais/README.md)
-  * [if / else](basico/condicionais/if-else.md)
-  * [🔥 cond](basico/condicionais/cond.md)
+  * [if/2](basico/condicionais/if-2.md)
+  * [cond/1](basico/condicionais/cond-1.md)
+  * [case/2](basico/condicionais/case-2.md)
 
 ## Conceitos
 

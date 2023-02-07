@@ -1,6 +1,6 @@
-# 🔥 cond
+# cond/1
 
-O `cond/0` nos ajuda a **condicionar um valor de acordo com diferentes valores de entrada**. Caindo em cada caso especificado pelo valor esperado. Normalmente utilizando [pattern matching](../pattern-matching.md).&#x20;
+Diferente de `case/2` que verificamos o valor e escolhemos o caso especifico para ela, `cond/1`  **verificamos a condição**, como feito no `if/2` com o adicional de termos várias condições alinhadas onde retornamos a primeira que for verdadeira.
 
 A definição dele segue a palavra chave `cond` seguido de `do`. Todo o controle de fluxo é tido dentro dele, exemplo:
 
@@ -9,14 +9,14 @@ A definição dele segue a palavra chave `cond` seguido de `do`. Todo o controle
 x = 3 # declaração de váriavel que será usada no cond
 
 cond do
-  x == 5 ->
-   "Isso não será verdadeiro"
+  x == 5 -> 
+   "Isso não é verdadeiro" # não entrará nesse escopo
    
   (x + 8) > 10 ->
-    "Nem isso"
+    "Nem isso" # nem nesse
     
   x == 3 ->
-    "Mas isso será" # logo essa clausura será sucesso e esse bloco será executado.
+    "Mas isso será" # Essa condição é verdadeira pois x é igual a 3 então esse bloco será executado.
     
   true ->
     "Nunca virá aqui, pois a clausura anterior é verdadeira"
