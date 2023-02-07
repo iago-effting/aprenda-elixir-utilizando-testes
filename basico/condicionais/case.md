@@ -1,4 +1,4 @@
-# case/2
+# case
 
 O `case/2` nos ajuda a **condicionar um valor de acordo com diferentes valores de entrada**. Ele cairá no caso especificado pelo valor esperado. Normalmente utilizando [pattern matching](../pattern-matching.md). \
 \
@@ -37,7 +37,7 @@ Case se torna um bom recurso para conseguirmos lidar com todos os casos dessa re
 
 Vamos a um código mais simples para aplicarmos o conceito.
 
-Utilizaremos o código de autorização feita no estudo de [cond/1](cond-1.md) . Precisamos obter os dados de um recurso, que vamos chamar aqui de `articles.` Pra isso o usuário deve estar autorizado a receber a informação. Qualquer nível de funcionário conseguirá realizar essa operação.
+Utilizaremos o código de autorização feita no estudo de [cond/1](cond.md) . Precisamos obter os dados de um recurso, que vamos chamar aqui de `articles.` Pra isso o usuário deve estar autorizado a receber a informação. Qualquer nível de funcionário conseguirá realizar essa operação.
 
 {% code title="test/article_test.exs" lineNumbers="true" %}
 ```elixir
