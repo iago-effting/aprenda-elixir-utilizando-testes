@@ -13,7 +13,7 @@
 ## Básico
 
 * [Módulos](basico/modulos.md)
-* [Funções](basico/funcoes/README.md)
+* [Funções](basico/funcoes.md)
   * [Nomeadas](basico/funcoes/nomeadas.md)
   * [Anônimas](basico/funcoes/anonimas.md)
 * [Atoms](basico/atoms.md)
