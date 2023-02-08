@@ -15,7 +15,7 @@ Com isso ela se torna uma função anônima, nos possibilitando coloca-la em uma
 Um exemplo de como podemos fazer isso
 
 ```elixir
-# usando função anonima
+# usando função anônima
 Enum.map([1,2,3], fn x -> x * 2 end)
 # [2, 4, 6]
 
