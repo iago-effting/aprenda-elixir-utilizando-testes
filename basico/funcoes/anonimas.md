@@ -74,14 +74,6 @@ Enum.map([1, 2, 3], fn x -> x * 2 end
 ```
 {% endcode %}
 
-{% hint style="info" %}
-Podemos fazer o mesmo com funções nomeadas, mas para isso precisamos que ela se comporte como uma função anônima.  Para isso, precisamos utilizar uma definição que começa com um `E` comercial (`&)`, seguido da chamada da função e finalizando com a aridade. Chamados esse operador & de operador de captura, onde utilizamos com uma função nomeada para ser tratada como uma função anônima.\
-
-
-`Enum.map([1,2,3], &MyModule.math/1)`\
-`Enum.map([1,2,3], fn x -> x*2 end)`
-{% endhint %}
-
 ### Conclusão
 
 Funções anônimas podem parecer estranhas em primeiro contato. Mas uma vez que você esteja lidando com problemas reais em seu programa, verá que ele se torna útil em diversas ocasiões.

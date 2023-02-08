@@ -1,2 +1,0 @@
-# Funções como valores
-
