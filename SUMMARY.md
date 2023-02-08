@@ -8,7 +8,7 @@
 * [Instalação](primeiros-passos-em-elixir/instalacao.md)
 * [Ferramenta Mix](primeiros-passos-em-elixir/ferramenta-mix.md)
 * [Meu "Hello, world"](primeiros-passos-em-elixir/meu-hello-world.md)
-* [iEx](primeiros-passos-em-elixir/iex.md)
+* [IEx](primeiros-passos-em-elixir/iex.md)
 
 ## Básico
 
