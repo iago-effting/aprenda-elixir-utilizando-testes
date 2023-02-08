@@ -13,9 +13,11 @@
 ## Básico
 
 * [Módulos](basico/modulos.md)
+* [Variáveis](basico/variaveis.md)
 * [Funções](basico/funcoes.md)
   * [Funções nomeadas](basico/funcoes/nomeadas.md)
   * [Funções anônimas](basico/funcoes/anonimas.md)
+  * [Funções como valores](basico/funcoes/funcoes-como-valores.md)
 * [Atoms](basico/atoms.md)
 * [Pattern Matching](basico/pattern-matching.md)
 * [Tuples](basico/tuples.md)

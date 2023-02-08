@@ -1,6 +1,8 @@
-# Anônimas
+# Funções anônimas
 
-Funções anônimas funcionam parecidos com as [funções nomeadas](nomeadas.md). Enquanto a função nomeada possui um nome próprio, a função anonima possui seu comportamento, podendo ser atribuido a qualquer variável. Vamos criar um teste simples, um usando uma função nomeada, criado no capítulo [Funções nomeadas](nomeadas.md). Depois criaremos um segundo que faz a mesma coisa, porém, como uma função anônima.
+Funções anônimas funcionam parecidos com as [funções nomeadas](nomeadas.md). Enquanto a função nomeada possui um nome próprio, a função anonima possui seu comportamento, podendo ser atribuido a qualquer variável, chamamos isso de "First class citizen". que significa que tratamos funções como valores.
+
+Vamos criar um teste simples, um usando uma função nomeada, criado no capítulo [Funções nomeadas](nomeadas.md). Depois criaremos um segundo que faz a mesma coisa, porém, como uma função anônima e por ser first class citizen, colocaremos ela em uma variável pois variáveis recebem valores.
 
 <pre class="language-elixir" data-title="" data-line-numbers><code class="lang-elixir">defmodule FunctionTest do
   use ExUnit.Case
@@ -64,11 +66,21 @@ Existem diversos casos que a função anonima é mais apropriada. Como quando qu
 Não se importe agora com o que seja o Enum.map/2, veremos isso depois.
 {% endhint %}
 
+Aqui podemos ver novamente o **First Class Citizen** agindo. O segundo parâmetro de `Enum.map/2` espera um valor do tipo função. Podemos então colocar a função anonima diretamente, sem necessidade de passar por uma variável antes.
+
 {% code lineNumbers="true" %}
 ```elixir
 Enum.map([1, 2, 3], fn x -> x * 2 end
 ```
 {% endcode %}
+
+{% hint style="info" %}
+Podemos fazer o mesmo com funções nomeadas, mas para isso precisamos que ela se comporte como uma função anônima.  Para isso, precisamos utilizar uma definição que começa com um `E` comercial (`&)`, seguido da chamada da função e finalizando com a aridade. Chamados esse operador & de operador de captura, onde utilizamos com uma função nomeada para ser tratada como uma função anônima.\
+
+
+`Enum.map([1,2,3], &MyModule.math/1)`\
+`Enum.map([1,2,3], fn x -> x*2 end)`
+{% endhint %}
 
 ### Conclusão
 
