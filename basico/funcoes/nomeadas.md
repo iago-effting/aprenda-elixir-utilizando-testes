@@ -1,15 +1,17 @@
-# Nomeadas
+# Funções nomeadas
 
 A função é o principal elemento das linguagens funcionais (grande surpresa an?) e tem como objetivo realizar comportamentos.&#x20;
 
 {% hint style="info" %}
 **Aridade**\
 ****\
-****De forma simples, a aridade é a quantidade de argumentos que uma função recebe.
+****De forma simples, a [aridade](../../conceitos/aridade.md) é a quantidade de argumentos que uma função recebe.
 
 Uma função `login` que recebe `user` e `password` por parâmetro tem aridade 2 e é representado com o nome da função, barra (/) e o número da aridade. Exemplo:\
 \
-`login(user, password) -> login/2`
+`login(user, password) -> login/2`\
+``\
+``Veja mais no [capítulo de Aridade](../../conceitos/aridade.md)
 {% endhint %}
 
 Funções nomeadas devem existir somente dentro de módulos e são declaradas com `def/2` e `defp/2` para funções privadas. Como por exemplo:

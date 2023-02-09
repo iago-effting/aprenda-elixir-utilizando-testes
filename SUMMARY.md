@@ -13,7 +13,6 @@
 ## Básico
 
 * [Módulos](basico/modulos.md)
-* [Variáveis](basico/variaveis.md)
 * [Funções](basico/funcoes.md)
   * [Funções nomeadas](basico/funcoes/nomeadas.md)
   * [Funções anônimas](basico/funcoes/anonimas.md)
@@ -34,6 +33,7 @@
 
 * [Imutabilidade](conceitos/imutabilidade.md)
 * [Convenções](conceitos/convencoes.md)
+* [Aridade](conceitos/aridade.md)
 
 ## Em breve
 
