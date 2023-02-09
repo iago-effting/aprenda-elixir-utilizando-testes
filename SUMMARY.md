@@ -32,8 +32,8 @@
 ## Conceitos
 
 * [Imutabilidade](conceitos/imutabilidade.md)
-* [Convenções](conceitos/convencoes.md)
 * [Aridade](conceitos/aridade.md)
+* [Convenções](conceitos/convencoes.md)
 
 ## Em breve
 
