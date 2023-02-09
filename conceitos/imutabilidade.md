@@ -65,15 +65,11 @@ Finished in 0.02 seconds (0.00s async, 0.02s sync)
 2 tests, 0 failures
 ```
 
-Tudo no elixir é imutável, funcionando com essa mesma ideia.&#x20;
-
-Mantenha isso em mente.
-
-
+Tudo no elixir é imutável, mantenha isso em mente é um conceito importante.
 
 ### Conclusão
 
-Abordamos o básico de imutabilidade. É um ponto importante no estudo de linguagens funcionais. Ela nos ajuda a evitar diversos problemas na utilização da concorrência, nos dando uma boa vantagem em relações a linguagens mutaveis.
+Abordamos o básico de imutabilidade. É um ponto importante no estudo de linguagens funcionais. Ela nos ajuda a evitar diversos problemas na utilização da concorrência, nos dando uma boa vantagem em relações a linguagens mutáveis.
 
 Lembrando, toda vez que realizarmos uma mudança de dados, o dado original nunca será alterado, você terá que cuidar dessa re-assinatura ou sobreposição de valores.
 
