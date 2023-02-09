@@ -141,5 +141,9 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 2 tests, 0 failures
 ```
 
+### Conclusão
+
+Aridade é uma representação matemática que utilizamos para definir o número de argumentos que uma função necessidade para ser executada.&#x20;
+
 
 
