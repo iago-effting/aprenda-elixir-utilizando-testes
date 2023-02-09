@@ -107,7 +107,7 @@ Finished in 0.05 seconds (0.00s async, 0.05s sync)
 {% hint style="info" %}
 **Imutabilidade**\
 \
-Elixir é uma linguagem imutável. Isso quer dizer que não podemos alterar valores ja definidos. Sempre que precisarmos fazer isso, devemos responder um novo elemento e re-assinar o mesmo. Exemplo\
+Elixir é uma linguagem que utiliza o [conceito de  imutabilidade](../conceitos/imutabilidade.md). Isso quer dizer que não podemos alterar valores ja definidos. Sempre que precisarmos fazer isso, devemos responder um novo elemento e re-assinar na estrutura de dados que estamos. Exemplo\
 
 
 `data = %{ name: "Iago" }`
@@ -115,7 +115,7 @@ Elixir é uma linguagem imutável. Isso quer dizer que não podemos alterar valo
 `new_data = %{data | name: "Elixir"}`
 
 ``\
-`Data` nunca será mutado, sempre precisaremos re-assinar o valor a variável, caso queiramos que ela mude.
+`a variáveldata` nunca será alterará, se quiser usar o valor novo, precisamos substituir o antigo pelo novo, onde perderemos tudo do valor inicial.&#x20;
 {% endhint %}
 
 ### Conclusão
