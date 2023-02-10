@@ -141,6 +141,120 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 2 tests, 0 failures
 ```
 
+Também podemos usar a aridade para escolher a função a ser rodada de mesmo nome. Vamos fazer outro teste.
+
+{% code title="" lineNumbers="true" %}
+```elixir
+defmodule PersonhTest do
+  use ExUnit.Case
+  
+  describe "say_my_name/2" do
+    test "success: when passing two arguments" do
+      assert Person.say_my_name("Iago", "Effting") == "Seu nome completo é Iago Effting"
+    end
+  end
+end
+```
+{% endcode %}
+
+Você pode rodar e ver que o módulo e função não foram definidas. Vamos cria-la.
+
+{% code title="lib/person.ex" lineNumbers="true" %}
+```elixir
+defmodule Person do
+  def say_my_name(first_name, last_name) do
+    "Seu nome completo é #{first_name} #{last_name}"
+  end
+end
+```
+{% endcode %}
+
+```sh
+mix test test/person_test.exs
+Compiling 1 file (.ex)
+
+...
+Finished in 0.01 seconds (0.00s async, 0.01s sync)
+1 tests, 0 failures
+```
+
+Agora vamos supor que só mande o primeiro nome.
+
+{% code title="test/person_test.exs" lineNumbers="true" %}
+```elixir
+defmodule PersonhTest do
+  use ExUnit.Case
+  
+  describe "say_my_name/2" do
+    # ...
+    
+    test "success: when passing one argument" do
+      assert Person.say_my_name("Iago") == "Seu primeiro nome é Iago Effting"
+    end
+  end
+end
+```
+{% endcode %}
+
+```sh
+mix test test/person_test.exs
+warning: Person.say_my_name/1 is undefined or private. Did you mean:
+
+      * say_my_name/2
+
+  test/person_test.exs:10: PersonTest."test say_my_name/2 success: when passing one argument"/1
+
+..
+
+  1) test say_my_name/2 success: when passing one argument (PersonTest)
+     test/person_test.exs:9
+     ** (UndefinedFunctionError) function Person.say_my_name/1 is undefined or private. Did you mean:
+     
+           * say_my_name/2
+     
+     code: assert Person.say_my_name("Iago") == "Seu primeiro nome é Iago"
+     stacktrace:
+       (hello_world 0.1.0) Person.say_my_name("Iago")
+       test/person_test.exs:10: (test)
+
+.
+Finished in 0.02 seconds (0.00s async, 0.02s sync)
+2 tests, 1 failure
+```
+
+O relatório de erro avisa que não temos uma função say\_my\_name de aridade 1 (`say_my_name/1`) e sugestiona a outra que criamos no exemplo anterior `say_my_name/1`. Para fazer esse teste passar, precisamos criar uma nova função `say_my_name` que suporte receber apenas um argumento.
+
+{% hint style="info" %}
+Diferente de algumas linguagem de programação, Elixir suporte multiplas definições de uma mesma função.
+{% endhint %}
+
+Vamos criar essa nova função
+
+{% code title="lib/person.ex" lineNumbers="true" %}
+```elixir
+defmodule Person do
+  # ...
+  def say_my_name(first_name) do
+    "Seu primeiro nome é #{first_name}"
+  end
+end
+```
+{% endcode %}
+
+Rodando o teste agora, você terá um relatório de sucesso.
+
+```sh
+mix test test/person_test.exs
+Compiling 1 file (.ex)
+....
+Finished in 0.01 seconds (0.00s async, 0.01s sync)
+2 tests, 0 failures
+```
+
+Quando chamamos uma função que tem mais de uma definição ela irá começar da primeira definição a que esta mais ao topo para baixo, parando na primeira oportunidade. Logo, a posição onde se encontra a definição da função importa
+
+
+
 ### Conclusão
 
 Aridade é uma representação matemática que utilizamos para definir o número de argumentos que uma função necessidade para ser executada.&#x20;
