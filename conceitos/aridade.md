@@ -251,9 +251,24 @@ Finished in 0.01 seconds (0.00s async, 0.01s sync)
 2 tests, 0 failures
 ```
 
-Quando chamamos uma função que tem mais de uma definição ela irá começar da primeira definição a que esta mais ao topo para baixo, parando na primeira oportunidade. Logo, a posição onde se encontra a definição da função importa
+Quando chamamos uma função que tem mais de uma definição ela irá começar da primeira definição a que esta mais ao topo do aqruivo para baixo, parando na primeira oportunidade.&#x20;
 
+{% code lineNumbers="true" %}
+```elixir
+defmodule Sample do
+  def function_1(), do: IO.inspect("Declaração 1")
+  def function_1(_arg), do: IO.inspect("Declaração 2")
+  def function_1(_arg), do: IO.inspect("Declaração 3")
+end
 
+# ...
+
+Sample.functin_1("hello")
+# Declaração 2
+```
+{% endcode %}
+
+Então, devemos levar em consideração a posição que a função é declarada.
 
 ### Conclusão
 

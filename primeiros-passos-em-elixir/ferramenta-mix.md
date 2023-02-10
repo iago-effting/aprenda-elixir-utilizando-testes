@@ -6,8 +6,7 @@ Ela tem o poder de:
 
 * Criar projetos elixir;
 * Gerenciar dependências;
-* Testar a aplicação
-* Rodar Tasks
+* Rodar scripts elixir
 
 Uma vez com a linguagem instalada ([já ensinado em etapas anteriores](instalacao.md)), você tera acesso ao mix por linha de comando.
 
