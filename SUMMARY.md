@@ -28,6 +28,9 @@
   * [if](basico/condicionais/if.md)
   * [cond](basico/condicionais/cond.md)
   * [case](basico/condicionais/case.md)
+* [Estrutura de repetição](basico/estrutura-de-repeticao/README.md)
+  * [Recursão](basico/estrutura-de-repeticao/recursao.md)
+  * [Enum](basico/estrutura-de-repeticao/enum.md)
 
 ## Conceitos
 
