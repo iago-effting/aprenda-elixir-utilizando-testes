@@ -17,6 +17,7 @@
   * [Funções nomeadas](basico/funcoes/nomeadas.md)
   * [Funções anônimas](basico/funcoes/anonimas.md)
   * [Funções nomeadas como anônima](basico/funcoes/funcoes-nomeadas-como-anonima.md)
+* [Guards](basico/guards.md)
 * [Atoms](basico/atoms.md)
 * [Pattern Matching](basico/pattern-matching.md)
 * [Tuples](basico/tuples.md)
