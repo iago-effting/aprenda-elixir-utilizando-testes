@@ -64,10 +64,24 @@ Isso faz com que não tenhamos o poder de saber se algo deu certo por pattern ma
 {% code lineNumbers="true" %}
 ```shell
 iex> HTTPoison.get(url)
-{:ok, %HTTPoison.Response{...}}
+# {:ok, %HTTPoison.Response{...}}
 
 iex> HTTPoison.get!(url)
-%HTTPoison.Response{...}
+# %HTTPoison.Response{...}
+```
+{% endcode %}
+
+### Função com interrogação (`?`)
+
+Quando queremos uma resposta de sim ou não para alguém, fazemos perguntas. Em elixir não é diferente. Quando queremos que o tipo do dado seja booleano (que aceite true ou false) utilizamos em seu nome o ponto de interrogação. Quando você ver isso em alguma função você saberá que retorna-rá um boleano.
+
+{% code lineNumbers="true" %}
+```sh
+File.dir?("./test")
+# true
+
+Enum.any?([false, true, false])
+# true
 ```
 {% endcode %}
 
