@@ -16,7 +16,7 @@
 * [Funções](basico/funcoes.md)
   * [Funções nomeadas](basico/funcoes/nomeadas.md)
   * [Funções anônimas](basico/funcoes/anonimas.md)
-  * [Funções nomeadas como anônima](basico/funcoes/funcoes-nomeadas-como-anonima.md)
+  * [Funções nomeadas convertidas para anônima](basico/funcoes/funcoes-nomeadas-convertidas-para-anonima.md)
 * [Atoms](basico/atoms.md)
 * [Pattern Matching](basico/pattern-matching.md)
 * [Tuples](basico/tuples.md)

@@ -4,6 +4,6 @@ Funções são a base do desenvolvimento em Elixir. Ela que guiará seu programa
 
 * [Funções nomeadas](funcoes/nomeadas.md)
 * [Funções anônimas](funcoes/anonimas.md)
-* [Funções nomeadas como anônimas](funcoes/funcoes-nomeadas-como-anonima.md)
+* [Funções nomeadas como anônimas](funcoes/funcoes-nomeadas-convertidas-para-anonima.md)
 
 Vamos ver um pouco mais sobre elas.
