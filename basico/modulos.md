@@ -8,16 +8,19 @@ description: >-
 
 Módulos são onde nossas funções vivem. Elas não podem estar por ai sem um lugar para ficar, pois poderiam se perder e nunca mais ser utilizadas. Elixir obriga todas as funções estarem em módulos.
 
-Para definir um modulo, utilizamos a palavra chave [`defmodule`](https://elixir-lang.org/getting-started/modules-and-functions.html) seguido do nome e da abertura de seu contexto usando `do`. No exemplo criado na seção `Meu "Hello, world"` podemos vê-lo no arquivo `hello_world.ex`
+Para definir um module, utilizamos a palavra chave [`defmodule`](https://elixir-lang.org/getting-started/modules-and-functions.html) seguido do nome e da abertura de seu contexto usando `do`. No exemplo criado na seção Meu "Hello, world" podemos vê-lo no arquivo `hello_world.ex`
 
-<pre class="language-elixir" data-title="lib/hello_world.ex" data-line-numbers><code class="lang-elixir"><strong>defmodule HelloWorld do # aqui está o nome do nosso módulo
-</strong>  def hello do
+{% code title="lib/hello_world.ex" lineNumbers="true" %}
+```elixir
+defmodule HelloWorld do # aqui está o nome do nosso módulo
+  def hello do
     :world
   end
 end
-</code></pre>
+```
+{% endcode %}
 
-Isso serve para quando chamarmos nossas funções. Ao invés de somente `hello`, temos `HelloWorld.hello` e facilmente sabemos quem ela é.
+Isso serve para quando chamarmos nossas funções, sabermos de onde elas estão vindo. Ao invés de somente `hello`, temos `HelloWorld.hello` e facilmente sabemos quem ela é.
 
 No arquivo de teste podemos ver como o código é executado utilizando a chamada do modulo e depois a função.
 
@@ -31,7 +34,7 @@ No arquivo de teste podemos ver como o código é executado utilizando a chamada
 end
 </code></pre>
 
-Podemos definir diversas funções dentro de um modulo (mas não façam isso, precisamos de organização certo?). Alguns bons exemplos de módulos e funções:
+Podemos definir infinitas funções dentro de um modulo (mas não façam isso, precisamos de organização certo? hehe). Alguns bons exemplos de módulos:
 
 * `Authentication.login(user, password)`
 * `Authentication.logout(user)`
@@ -46,11 +49,7 @@ Temos por regra:
 * Todo módulo deve começar com letra maiúscula, no estilo [CamelCase](https://pt.wikipedia.org/wiki/CamelCase);
 * O modulo deve conter apenas o que é necessário para sua execução;
 
-Nome de módulos podem ter mais de uma nível de profundidade, exemplo `Project.Authentication.Meta.Token` e geralmente seguem a estrutura de pastas.&#x20;
-
-```
-lib/authenticatin/meta/token.ex
-```
+Nome de módulos podem ter mais de uma nível de profundidade, exemplo `Project.Authentication.Meta.Token` e geralmente seguem a estrutura de pastas
 
 ### Atributos de módulo
 
