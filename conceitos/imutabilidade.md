@@ -1,7 +1,7 @@
 # Imutabilidade
 
 {% hint style="warning" %}
-**Aviso sobre essa categoria**
+**Aviso sobre esse capítulo**
 
 Abordarei apenas o básico para seguirmos nos estudos. Imutabilidade é um assunto complexo. Entender as vantagens e desvantagens pode consumir tempo e também confundir quem está começando em linguagens funcionais. Por hora, irei somente abordar o básico para entendimento da linguagem e para darmos continuidade nos estudos.
 {% endhint %}
