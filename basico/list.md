@@ -30,7 +30,7 @@ Temos uma lista que vai de 1 a 5. Queremos fazer algumas coisas com essa lista.
 
 Vamos ao nosso teste do primeiro caso.
 
-### Oeprador `++`
+### Oeprador `++/2`
 
 <pre class="language-elixir" data-title="my_list_test.exs" data-line-numbers><code class="lang-elixir">defmodule MyListTest do
   use ExUnit.Case
@@ -56,7 +56,7 @@ Finished in 0.02 seconds (0.00s async, 0.02s sync)
 1 test, 0 failures
 ```
 
-### Operador `--`
+### Operador `--/2`
 
 O operado ++ junta duas listas retornarndo uma nova lista. Essa expressão é auto-explicativa e de fácil entendimento. Muito útil no dia-a-dia.
 
@@ -92,7 +92,7 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 
 Temos o operador `--` que remove itens de uma lista. Lembrando que deve ser usado duas listas para isso, a do lado esquerdo que se mantera e do lado direito que será os itens a ser removidos.
 
-### Operador `in`
+### Operador `in/2`
 
 Muitas vezes precisamos saber se um elemento existe dentro de uma lista. Para isso podemos usar o operador in quando temos dados simples ou dados primitivos.
 
