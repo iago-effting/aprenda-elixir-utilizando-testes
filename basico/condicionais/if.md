@@ -1,4 +1,4 @@
-# if / else
+# if
 
 O mais popular no mundo do desenvolvimento é o `if/else`. Definido com `if/2` ele espera uma expressão e um bloco de execução inicado com `do`.
 
@@ -96,6 +96,8 @@ defmodule PersonTest do
 end
 ```
 {% endcode %}
+
+A utilização de interrogação no nome da função é uma convenção. Você pode entender melhor dela no capítulo de [conveções](../../conceitos/convencoes.md#funcao-com-interrogacao).
 
 ```shell
 mix test test/person_test.exs
