@@ -22,6 +22,7 @@
 * [Tuples](basico/tuples.md)
 * [Map](basico/map.md)
 * [Estruturas](basico/estruturas.md)
+* [List](basico/list.md)
 * [Pipes](em-breve/pipes.md)
 * [With](basico/with.md)
 * [Condicionais](basico/condicionais/README.md)
