@@ -22,7 +22,6 @@
 * [Tuples](basico/tuples.md)
 * [Map](basico/map.md)
 * [Estruturas](basico/estruturas.md)
-* [List](basico/list.md)
 * [Pipes](em-breve/pipes.md)
 * [With](basico/with.md)
 * [Condicionais](basico/condicionais/README.md)
@@ -30,6 +29,7 @@
   * [cond](basico/condicionais/cond.md)
   * [case](basico/condicionais/case.md)
 * [Guards](basico/guards.md)
+* [List](basico/list.md)
 * [Estrutura de repetição](basico/estrutura-de-repeticao/README.md)
   * [Recursão](basico/estrutura-de-repeticao/recursao.md)
   * [Enum](basico/estrutura-de-repeticao/enum.md)
@@ -43,3 +43,7 @@
 ## Em breve
 
 * [Let it crash (Deixe quebrar)](em-breve/let-it-crash-deixe-quebrar.md)
+
+## Será removido
+
+* [List - old](sera-removido/list-old.md)
