@@ -17,7 +17,7 @@ Espero que gostem :)
 
 ### Sobre o Conteúdo
 
-Todo o livro é estruturado em cima de testes. Isso significa que você ganhará com essa leitura, três pontos importantes para qualquer programador:
+Todo o livro é estruturado em cima de testes. Isso significa que você ganhará com essa leitura três pontos importantes para qualquer programador:
 
 1. Aprenderá os fundamentos da linguagem elixir;
 2. Aprenderá como testar suas implementações em elixir;
