@@ -15,6 +15,18 @@ Este livro ainda está sendo escrito, logo, algumas mudanças podem vir a serem 
 
 Espero que gostem :)
 
+### Sobre o Conteúdo
+
+Todo o livro é estruturado em cima de testes. Isso significa que você ganhará com essa leitura, três pontos importantes para qualquer programador:
+
+1. Aprenderá os fundamentos da linguagem elixir;
+2. Aprenderá como testar suas implementações em elixir;
+3. Aprenderá como pensar em forma de testes;
+
+Esse tipo de pensamento nos possibilta sermos o primeiro a usar nosso próprio código, não sendo raro ver mudança de legibilidade e manutenabilidade devido a isso. Também nos ajuda com entendimento de tarefas e contextos, sendo que precisamos saber o que queremos fazer para criar os testes. Uma vez o teste criado, temos um guia para seguir e fica mais claro nosso objetivo com o mesmo.
+
+Esse tipo de pensamente chegará a você por meio de "eurekas" enquanto você escreve seu código ou teste. Espero conseguir passar esse entendimento que tenho sobre TDD e como ele me ajuda no dia-a-dia a resolver problemas complexos e evoluir rapidamente em minhas tarefas.
+
 ### Sobre Feedback
 
 Estou abrindo um novo canal de feedback, esse mais efetivo para entendimento do conteúdo.&#x20;
