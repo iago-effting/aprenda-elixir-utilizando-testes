@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introdução](README.md)
+* [Sobre o autor](sobre-o-autor.md)
 
 ## Primeiros passos em Elixir
 
