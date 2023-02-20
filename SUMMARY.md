@@ -31,7 +31,7 @@
   * [case](basico/condicionais/case.md)
 * [Guards](basico/guards.md)
 * [Listas](basico/listas/README.md)
-  * [List](basico/listas/list.md)
+  * [List](basico/list.md)
   * [Stream](basico/listas/stream.md)
 * [Estrutura de repetição](basico/estrutura-de-repeticao/README.md)
   * [Recursão](basico/estrutura-de-repeticao/recursao.md)

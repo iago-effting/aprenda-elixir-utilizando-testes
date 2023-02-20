@@ -4,7 +4,7 @@ Listas são estruturas de dados que server para armazenar dados. Esses dados pod
 
 Encontramos facilmente exemplos de onde utiliza-los. Seja em uma listagem de usuários do sistema. Uma lista de argumentos que precisa ser enviado para o banco de dados ou a resposta de alguma função ou configuração de nossa aplicação. Entender seu conceito e como podemos utiliza-la é de grande vantagem para nós.&#x20;
 
-Possuímos dois tipos de lista e vamos entender melhor sobre elas no próximo capítulo.
+Possuímos dois tipos de lista e vamos entender melhor sobre elas nos próximos capítulos.
 
-* [List](list.md)
+* [List](../list.md)
 * [Stream](stream.md)
