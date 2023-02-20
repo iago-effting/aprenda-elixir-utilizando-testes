@@ -1,12 +1,8 @@
 # List
 
-Listas são estruturas de dados que server para armazenar dados. Esses dados podem ser simples como tipos primitivos `integer`, `string`, `atom`, `string`. Mas também podem armazenar dados mais complexos como `estruturas`, `mapas e` outras `listas`.
+Vamos diretamente a um exemplo prático.
 
-Encontramos facilmente exemplos de onde utiliza-los. Seja em uma listagem de usuários do sistema. Uma lista de argumentos que precisa ser enviado para o banco de dados ou a resposta de alguma função ou configuração de nossa aplicação. Entender seu conceito e como podemos utiliza-la é de grande vantagem para nós. Vamos a um exemplo.
-
-### Exemplo
-
-Foi estipulado que tenhamos uma listagem de candidatos que foram aprovados no vestibular. Eles precisamos que tenhamos poder de aprovar alguém (adicionando o estudando a lista) e também desaprovar alguém (removendo o estudando da lista.) Com esse levantamento temos três pontos a lidar:
+Foi decidido que precisamos de uma listagem de candidatos que foram aprovados no vestibular. Com ela, podemos realizar a operação de aprovar estudantes (adicionando o estudando a lista) e também desaprovar estudantes (removendo o estudando da lista.) Com esse levantamento temos três pontos a lidar:
 
 1. Ter uma lista de estudando aprovados
 2. Conseguir adicionar estudantes nessa lista
@@ -394,7 +390,7 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 Criamos um teste que chama uma função `was_approved?/2`, onde o primeiro argumento é a lista de aprovados e o segundo argumento é uma `string` com o nome do estudante que queremos saber se foi aprovado.&#x20;
 
 {% hint style="info" %}
-O nome da função possui uma interrogação, dando a entender que queremos uma resposta de verdadeiro ou falso, isso é uma convenção que também adotamos no Elixir, você pode ver mais sobre isso no [capítulo de conveções](../conceitos/convencoes.md#funcao-com-interrogacao).
+O nome da função possui uma interrogação, dando a entender que queremos uma resposta de verdadeiro ou falso, isso é uma convenção que também adotamos no Elixir, você pode ver mais sobre isso no [capítulo de conveções](../../conceitos/convencoes.md#funcao-com-interrogacao).
 {% endhint %}
 
 Vamos resolver esse teste:
