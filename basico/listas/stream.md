@@ -16,7 +16,7 @@ Vamos ao teste:
   use ExUnit.Case
 
   describe "schedule/1" do
-    test "Create a lazy list with the math" do
+    test "Create a lazy list and execute later" do
       range = 1..5
 
 <strong>      stream = Stream.map(range, &#x26;Event.schedule/1)
@@ -46,7 +46,7 @@ Porém, estamos usando `Stream` e esse código ainda não foi executado. Vamos r
 ```sh
 mix test test/event_test.exs
 warning: Event.schedule/1 is undefined (module Event is not available or is yet to be defined)
-  test/event_test.exs:8: EventTest."test schedule/1 Create a lazy list with the math"/1
+  test/event_test.exs:8: EventTest."test schedule/1Create a lazy list and execute later"/1
 
 .
 Finished in 0.03 seconds (0.00s async, 0.03s sync)
@@ -59,7 +59,7 @@ Estranho não? O teste passou, mesmo acusando em um `warning` que não possuimos
   use ExUnit.Case
 
   describe "schedule/1" do
-    test "Create a lazy list with the math" do
+    test "Create a lazy list and execute later" do
       range = 1..5
 
       stream = Stream.map(range, &#x26;Event.schedule/1)
@@ -77,14 +77,14 @@ A linha 12 roda o streaming para mim e nessa hora ele tenta executar a função 
 ```sh
 mix test test/event_test.exs
 warning: variable "response" is unused (if the variable is not meant to be used, prefix it with an underscore)
-  test/event_test.exs:11: EventTest."test schedule/1 Create a lazy list with the math"/1
+  test/event_test.exs:11: EventTest."test schedule/1 Create a lazy list and execute later"/1
 
 warning: Event.schedule/1 is undefined (module Event is not available or is yet to be defined)
-  test/event_test.exs:8: EventTest."test schedule/1 Create a lazy list with the math"/1
+  test/event_test.exs:8: EventTest."test schedule/1 Create a lazy list and execute later"/1
 
 
 
-  1) test schedule/1 Create a lazy list with the math (EventTest)
+  1) test schedule/1 Create a lazy list and execute later (EventTest)
      test/event_test.exs:5
      ** (UndefinedFunctionError) function Event.schedule/1 is undefined (module Event is not available)
      code: response = Stream.run(stream)
@@ -131,7 +131,7 @@ defmodule EventTest do
   use ExUnit.Case
 
   describe "schedule/1" do
-    test "Create a lazy list with the math" do
+    test "Create a lazy list and execute later" do
       range = 1..5
 
       stream = Stream.map(range, &Event.schedule/1)
@@ -159,7 +159,7 @@ Vamos rodar esse teste:
 mix test test/event_test.exs
 
 
-  1) test schedule/1 Create a lazy list with the math (EventTest)
+  1) test schedule/1 Create a lazy list and execute later (EventTest)
      test/event_test.exs:5
      Assertion with == failed
      code:  assert response == [
@@ -189,7 +189,7 @@ Para resolver isso, utilizaremos uma função simples do módulo `Enum` chamada 
   use ExUnit.Case
 
   describe "schedule/1" do
-    test "Create a lazy list with the math" do
+    test "Create a lazy list and execute later" do
       range = 1..5
 
       stream = Stream.map(range, &#x26;Event.schedule/1)
