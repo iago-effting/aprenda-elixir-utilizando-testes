@@ -221,3 +221,9 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 
 Perfeito! Fizemos nosso primeiro processamento de `Stream` e tudo ocorreu bem.&#x20;
 
+### Conclusão
+
+Stream é uma lista de carregamento preguiçoso que só será executado quando realmente precisar. ele serve para evitar processamente sem necessidades, como quando não precisamos executar todos os dados de uma vez em uma lista de milhares de dados. Isso nós ajuda a salvar processamento.
+
+Esse foi um exemlpo simples para entendermos o conceito de Stream. Fiz um vídeo mais avançado sobre processamento de grande quantidade de dados. Você pode dar uma olhada nele [nesse link](https://www.youtube.com/watch?v=w\_Z6BL9\_59w).
+
