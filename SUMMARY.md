@@ -32,16 +32,16 @@
 * [Guards](basico/guards.md)
 * [Listas](basico/listas/README.md)
   * [List](basico/list.md)
+  * [Recursão](basico/listas/recursao.md)
+  * [Enum](basico/listas/enum.md)
   * [Stream](basico/listas/stream.md)
-* [Estrutura de repetição](basico/estrutura-de-repeticao/README.md)
-  * [Recursão](basico/estrutura-de-repeticao/recursao.md)
-  * [Enum](basico/estrutura-de-repeticao/enum.md)
 
 ## Conceitos
 
 * [Imutabilidade](conceitos/imutabilidade.md)
 * [Aridade](conceitos/aridade.md)
 * [Convenções](conceitos/convencoes.md)
+* [Enumeráveis](conceitos/enumeraveis.md)
 
 ## Em breve
 
@@ -50,3 +50,4 @@
 ## Será removido
 
 * [List - old](sera-removido/list-old.md)
+* [Estrutura de repetição](sera-removido/estrutura-de-repeticao.md)

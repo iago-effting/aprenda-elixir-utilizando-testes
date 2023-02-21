@@ -1,8 +1,8 @@
 # Enum
 
-Algumas funções nativas no Elixir que utilizam recursão estão disponíveis para nos utilizarmos com uma API mais limpa. O módulo [`Enum`](https://hexdocs.pm/elixir/1.12/Enum.html) tem diversos recursos que você pode utilizar.&#x20;
+Algumas funções nativas no Elixir utilizam recursão estão disponíveis para utilizarmos com uma API  limpa. O módulo [`Enum`](https://hexdocs.pm/elixir/1.12/Enum.html) é um deles. Para entender melhor o que é um Enum, leia o [conceito de Enumeráveis](../../conceitos/enumeraveis.md).
 
-Irei mostrar os três mais comumentes usados. Vamos a um exemplo real com base em algumas funções que Enum tem.
+Vamos a um exemplo real com base em algumas funções que Enum tem.
 
 ### Enum.each/2
 
