@@ -2,13 +2,13 @@
 
 Falamos sobre enumeráveis (ou enumerables), onde é uma característica do que é enumerável ou qualidade daquilo que se consegue enumerar. Em nosso contexto, algo que podemos iterar, passando um por um. Fizemos exemplos de iteração no capítulo sobre [Enum](enum.md).&#x20;
 
-Stream está nessa mesma categoria, com uma diferença importante. Vamos definir Stream rapidamente e ir para o exemplo.
+Stream está nessa mesma categoria, com uma diferença importante. Streams são composições de enumeração preguiçosa.&#x20;
 
-Streams são composições de enumeração preguiçosa. Isso quer dizer, diferente de listas que ao criamos são executadas, Streams não são. eles comportam tudo que precisamos para tal, mas não executam até que precisamos. Logo, preguiçoso.&#x20;
+Isso quer dizer, diferente de listas que ao criamos são executadas, `Streams` não são. Eles contém tudo que precisamos para executar, mas só irão ser executados quando for necessário. Logo, preguiçoso.&#x20;
 
 Vamos a um exemplo simples:
 
-Precisamos ir de 1 a 5, mas enquanto vamos precisamos multiplicar o número atual em 2. Porém, não queremos ter o resultado agora, porque só será processado semana que vem.&#x20;
+Precisamos agendar 5 eventos, porém, não queremos ter o resultado agora, porque só será processado semana que vem.&#x20;
 
 Vamos ao teste:
 
