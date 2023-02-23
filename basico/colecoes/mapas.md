@@ -1,4 +1,4 @@
-# Map
+# Mapas
 
 `Map` são estruturas de dados no modelo chave valor (dicionário) que aceitam todos os tipos de dados. A definição dela segue o modelo `%{}` e os valores vão dentro das chaves.
 
@@ -107,7 +107,7 @@ Finished in 0.05 seconds (0.00s async, 0.05s sync)
 {% hint style="info" %}
 **Imutabilidade**\
 \
-Elixir é uma linguagem que utiliza o [conceito de  imutabilidade](../conceitos/imutabilidade.md). Isso quer dizer que não podemos alterar valores ja definidos. Sempre que precisarmos fazer isso, devemos responder um novo elemento e re-assinar na estrutura de dados que estamos. Exemplo\
+Elixir é uma linguagem que utiliza o [conceito de  imutabilidade](../../conceitos/imutabilidade.md). Isso quer dizer que não podemos alterar valores ja definidos. Sempre que precisarmos fazer isso, devemos responder um novo elemento e re-assinar na estrutura de dados que estamos. Exemplo\
 
 
 `data = %{ name: "Iago" }`

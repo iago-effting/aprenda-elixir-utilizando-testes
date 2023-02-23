@@ -1,6 +1,6 @@
 # Manipulação de dados
 
-Os dados em Elixir são representados por diferentes tipos de valores, como `números`, `strings`, `booleanos`, [`listas`](../listas.md), [`mapas`](../mapas.md), [`tuplas`](../tuplas.md), conjuntos, e outros. Cada tipo de dado tem suas próprias características e propriedades que podem ser utilizadas para resolver problemas específicos.
+Os dados em Elixir são representados por diferentes tipos de valores, como `números`, `strings`, `booleanos`, [`listas`](../colecoes/listas.md), [`mapas`](../colecoes/mapas.md), [`tuplas`](../colecoes/tuplas.md), conjuntos, e outros. Cada tipo de dado tem suas próprias características e propriedades que podem ser utilizadas para resolver problemas específicos.
 
 Para trabalhar com dados, existem diversas funções e módulos disponíveis, como o módulo Enum, o módulo Stream, e muitos outros. Esses recursos fornecem ferramentas para manipular e transformar dados de maneira eficiente e concisa.
 

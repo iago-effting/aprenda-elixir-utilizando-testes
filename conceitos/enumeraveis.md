@@ -17,7 +17,7 @@ Alguns dos módulos mais comuns que utilizam o protocolo Enumerable:
 
 * [Enum](../basico/listas/enum.md)
 * [Stream](../basico/listas/stream.md)
-* [List](../basico/listas.md)
+* [List](../basico/colecoes/listas.md)
 * Range
 * MapSet
 

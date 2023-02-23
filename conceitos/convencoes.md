@@ -16,7 +16,7 @@ Podemos facilmente entender que uma função não foi executada com sucesso, qua
 
 A definição de resposta funciona de duas formas.&#x20;
 
-1. Em caso de sucesso retornamos uma [tupla](../basico/tuplas.md) de `:ok`, junto com o `result`.&#x20;
+1. Em caso de sucesso retornamos uma [tupla](../basico/colecoes/tuplas.md) de `:ok`, junto com o `result`.&#x20;
 
 ```elixir
 {:ok, result} = Authentication.login(email, password)
@@ -39,7 +39,7 @@ Vou listar algumas bibliotecas famosas que utilizam dessa convenção:&#x20;
 * [Ecto](https://hexdocs.pm/ecto/Ecto.Repo.html#c:insert/2-examples)
 * [HTTPoison](https://hexdocs.pm/httpoison/HTTPoison.html#get/3)
 
-Uma das grandes vantagens na utilização da tupla de `:ok/:error` é a utilização do [`with`](../basico/with.md) onde podemos controlar por meio de pattern matching os resultados esperados. De uma olhada na seção [with](../basico/with.md) do livro, para se aprofundar mais.
+Uma das grandes vantagens na utilização da tupla de `:ok/:error` é a utilização do [`with`](../basico/controle-de-fluxo/with.md) onde podemos controlar por meio de pattern matching os resultados esperados. De uma olhada na seção [with](../basico/controle-de-fluxo/with.md) do livro, para se aprofundar mais.
 
 Um exemplo simples:
 

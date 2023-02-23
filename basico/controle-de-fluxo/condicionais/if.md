@@ -12,7 +12,7 @@ Só será executado o contexto de `if` caso a expressão seja verdadeira. Vamos 
 
 Precisamos de uma função que retorna se uma pessoa é maior de idade. Então expressão seria: `idade >= 18`. caso seja verdadeira, retorna `true`, case não, retorna `false`.
 
-Para estruturar nossa solução, iremos utiliza maps (caso não saiba o que é, de uma olhada no [capitulo de maps](../mapas.md)). Teremos no map o atributo `name` e o atributo `age`.&#x20;
+Para estruturar nossa solução, iremos utiliza maps (caso não saiba o que é, de uma olhada no [capitulo de maps](../../colecoes/mapas.md)). Teremos no map o atributo `name` e o atributo `age`.&#x20;
 
 Vamos ao nosso teste:
 
@@ -97,7 +97,7 @@ end
 ```
 {% endcode %}
 
-A utilização de interrogação no nome da função é uma convenção. Você pode entender melhor dela no capítulo de [conveções](../../conceitos/convencoes.md#funcao-com-interrogacao).
+A utilização de interrogação no nome da função é uma convenção. Você pode entender melhor dela no capítulo de [conveções](../../../conceitos/convencoes.md#funcao-com-interrogacao).
 
 ```shell
 mix test test/person_test.exs
@@ -214,4 +214,4 @@ Finished in 0.01 seconds (0.00s async, 0.01s sync)
 2 tests, 0 failures
 ```
 
-If é largamente utilizado em outras linguagens. Mesmo elixir possuindo `if`, não é tão utilizado devido ao [`pattern matching`](../pattern-matching.md). Porém, existem diversos cenários que são importantes.
+If é largamente utilizado em outras linguagens. Mesmo elixir possuindo `if`, não é tão utilizado devido ao [`pattern matching`](../../pattern-matching.md). Porém, existem diversos cenários que são importantes.

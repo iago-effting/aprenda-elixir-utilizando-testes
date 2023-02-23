@@ -2,7 +2,7 @@
 
 Eu realmente acho interessante a declaração `with`. Ele deixa as coisas mais claras e podemos também controlar o fluxo do código. Ela é baseada na utilização de funções encadeadas que podemos controlar em caso de sucesso e em caso de algo der errado.&#x20;
 
-Diferente dos [pipes](../em-breve/pipes.md), com `with` podemos ter um maior controle na mesma camada de onde ele está sendo implementado. Podemos definir o que esperamos de cada função por meio de pattern matching e como iremos usar a resposta nas funções subsequentes. Também podemos definir qual o fluxo ele vai tomar em caso de um erro especifico ou genérico.
+Diferente dos [pipes](pipes.md), com `with` podemos ter um maior controle na mesma camada de onde ele está sendo implementado. Podemos definir o que esperamos de cada função por meio de pattern matching e como iremos usar a resposta nas funções subsequentes. Também podemos definir qual o fluxo ele vai tomar em caso de um erro especifico ou genérico.
 
 A estrutura é simples:
 

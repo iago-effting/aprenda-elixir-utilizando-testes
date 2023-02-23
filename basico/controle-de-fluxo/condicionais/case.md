@@ -1,6 +1,6 @@
 # case
 
-O `case/2` nos ajuda a **condicionar um valor de acordo com diferentes valores de entrada**. Ele cairá no caso especificado pelo valor esperado. Normalmente utilizando [pattern matching](../pattern-matching.md). \
+O `case/2` nos ajuda a **condicionar um valor de acordo com diferentes valores de entrada**. Ele cairá no caso especificado pelo valor esperado. Normalmente utilizando [pattern matching](../../pattern-matching.md). \
 \
 Um exemplo real:
 
@@ -23,12 +23,12 @@ https://github.com/edgurgel/httpoison
 ```
 {% endhint %}
 
-Temos no exemplo uma chamada a um endpoint para resgatar um usuário com o id 1. No mundo real temos vários casos de resposta utilizando [pattern matching](../pattern-matching.md) para cada caso.
+Temos no exemplo uma chamada a um endpoint para resgatar um usuário com o id 1. No mundo real temos vários casos de resposta utilizando [pattern matching](../../pattern-matching.md) para cada caso.
 
 * **status: 200** -> Deu tudo certo e o usuário foi retornado no boddy
 * **status: 404** -> O usuário com id 1 não foi encontrado
 * **status: 401** -> Você não possui autorização para acessar esse endpoint
-* **:error** -> Algo deu errado na chamada do endpoint mas não possuimos tratamento para isso, logo, vou apenas retornar a razão do erro junto com a [tupla de error](../../conceitos/convencoes.md#tupla-ok-result-e-error-reason).\
+* **:error** -> Algo deu errado na chamada do endpoint mas não possuimos tratamento para isso, logo, vou apenas retornar a razão do erro junto com a [tupla de error](../../../conceitos/convencoes.md#tupla-ok-result-e-error-reason).\
 
 
 Case se torna um bom recurso para conseguirmos lidar com todos os casos dessa requisição e facilmente trata-las a fim de avisar o usuário ou tentar uma ação corretiva. No nosso caso, apenas alertamos que algo não saiu como o esperado.
@@ -182,7 +182,7 @@ Assim você consegue expandir os casos de uma funcionalidade.
 
 ### Conclusão
 
-Case é uma poderosa ferramenta para ter em sua caixa de ferramentas. Várias bibliotecas a utilizam. Também conseguimos tirar maior proveitos da [conveção de tuplas](../../conceitos/convencoes.md#tupla-ok-result-e-error-reason), sendo assim, mais fácil a sua utilização.
+Case é uma poderosa ferramenta para ter em sua caixa de ferramentas. Várias bibliotecas a utilizam. Também conseguimos tirar maior proveitos da [conveção de tuplas](../../../conceitos/convencoes.md#tupla-ok-result-e-error-reason), sendo assim, mais fácil a sua utilização.
 
 
 

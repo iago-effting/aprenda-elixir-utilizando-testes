@@ -1,4 +1,4 @@
-# cond/1
+# cond
 
 Diferente de `case/2` que verificamos o valor e escolhemos o caso especifico para ela, `cond/1`  **verificamos a condição**, como feito no `if/2` com o adicional de termos várias condições alinhadas onde retornamos a primeira que for verdadeira.
 
@@ -200,7 +200,7 @@ Interactive Elixir (1.14.3) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> 
 ```
 
-Caso não saiba o que é isso, vá para a sessão [iEX](../../primeiros-passos-em-elixir/iex.md) do livro.&#x20;
+Caso não saiba o que é isso, vá para a sessão [iEX](../../../primeiros-passos-em-elixir/iex.md) do livro.&#x20;
 
 Vamos executar a função Authorization.access/1 utilizando como parâmetro algo incorreto, como "lalala"
 
@@ -233,7 +233,7 @@ end
 ```
 {% endcode %}
 
-Criamos um teste simples para garantir o comportamento. Se você analisar o código, verá que agora adicionamos a convenção de [:ok/:error](../../conceitos/convencoes.md#tupla-ok-result-e-error-reason) para conseguirmos facilmente identificar quando algo da certo e quando algo da errado.
+Criamos um teste simples para garantir o comportamento. Se você analisar o código, verá que agora adicionamos a convenção de [:ok/:error](../../../conceitos/convencoes.md#tupla-ok-result-e-error-reason) para conseguirmos facilmente identificar quando algo da certo e quando algo da errado.
 
 Se rodarmos o teste, vamos ver que conseguimos reproduzir o erro no teste, o que é um ótimo sinal.
 
@@ -437,7 +437,7 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 2 tests, 0 failures
 ```
 
-Tudo finalizado no primeiro caso, porém, temos um inconsistência. Quando temos sucesso, recebemos a `message`, mas quando temos um erro temos uma estrutura diferente `{:error, reason}`. Devemos deixar elas similares e como estamos usando o padrão de [tuplas de ok/error](../../conceitos/convencoes.md#tupla-ok-result-e-error-reason), devemos alterar a resposta de sucesso para recebermos `{:ok, result}`. Mudança simples, apenas alterar primeiro os testes e depois a implementação.
+Tudo finalizado no primeiro caso, porém, temos um inconsistência. Quando temos sucesso, recebemos a `message`, mas quando temos um erro temos uma estrutura diferente `{:error, reason}`. Devemos deixar elas similares e como estamos usando o padrão de [tuplas de ok/error](../../../conceitos/convencoes.md#tupla-ok-result-e-error-reason), devemos alterar a resposta de sucesso para recebermos `{:ok, result}`. Mudança simples, apenas alterar primeiro os testes e depois a implementação.
 
 <pre class="language-elixir" data-title="test/authorization_test.exs" data-line-numbers><code class="lang-elixir">defmodule AuthorizationTest do
   use ExUnit.Case

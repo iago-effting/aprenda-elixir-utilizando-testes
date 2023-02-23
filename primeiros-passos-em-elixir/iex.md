@@ -62,7 +62,7 @@ Uma das melhores coisas a se conhecer é o arquivo `.iex.exs`. De início você 
 
 Quando inicamos uma sessão usitlizando `iex`, a ferramenta procura por um arquivo local chamado `.iex.exs`, normalmente criado no root do projeto, lado-a-lado do `mix.ex`. Então depois procura por um global localizado em `~/.iex.exs` carregando o primeiro que encontrar, dando sempre preferencia para o arquivo local do projeto.
 
-Tudo que está dentro desse arquivo é carregado para o contexto do IEx. Tudo que for criado ali vai ser carregado na sessão. Seja uma [map](../basico/mapas.md), uma [estrutura](../basico/estruturas.md) ou um [modulo](../basico/modulos.md).&#x20;
+Tudo que está dentro desse arquivo é carregado para o contexto do IEx. Tudo que for criado ali vai ser carregado na sessão. Seja uma [map](../basico/colecoes/mapas.md), uma [estrutura](../basico/colecoes/estruturas.md) ou um [modulo](../basico/modulos.md).&#x20;
 
 Vamos criar um .iex.exs no root do projeto [Hello, world ](meu-hello-world.md)criado no capítulo anterior. Adicionaremos lá uma variável simples
 
