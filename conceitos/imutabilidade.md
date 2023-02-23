@@ -10,7 +10,7 @@ Como o próprio nome diz, imutabilidade significa imutável, algo constante, que
 
 Vamos a um exemplo simples:
 
-* Criaremos um [`map`](../basico/map.md) de user onde terá o atributo `name`&#x20;
+* Criaremos um [`map`](../basico/mapas.md) de user onde terá o atributo `name`&#x20;
 * Alteraremos o `name` para `Cafe com elixir`
 
 Vamos criar nosso teste para isso

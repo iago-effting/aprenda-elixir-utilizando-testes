@@ -16,7 +16,7 @@ Podemos facilmente entender que uma função não foi executada com sucesso, qua
 
 A definição de resposta funciona de duas formas.&#x20;
 
-1. Em caso de sucesso retornamos uma [tupla](../basico/tuples.md) de `:ok`, junto com o `result`.&#x20;
+1. Em caso de sucesso retornamos uma [tupla](../basico/tuplas.md) de `:ok`, junto com o `result`.&#x20;
 
 ```elixir
 {:ok, result} = Authentication.login(email, password)

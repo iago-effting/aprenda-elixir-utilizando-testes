@@ -1,6 +1,6 @@
 # Recursão
 
-Um assunto interessante em programação funcional é a recursão. Um recurso usado para lidar com a impossibilidade de manter estado falado no capítulo sobre [imutabilidade](../../conceitos/imutabilidade.md).
+Um assunto interessante em programação funcional é a recursão. Um recurso usado para lidar com a impossibilidade de manter estado falado no capítulo sobre [imutabilidade](../conceitos/imutabilidade.md).
 
 O básico de uma recursão é: Uma função que se chama, criando um looping onde vai até sair fora dessa chamada. Vamos a um exemplo real.
 
@@ -87,7 +87,7 @@ BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
 ^C%
 ```
 
-Para isso não acontecer, precisamos de uma condição de parada, sendo a primeira coisa que definimos em nossa recursão. Nesse exemplo queremos que o X seja maior que 0. Essa é nossa condição. Para por isso em nossa função utilizaremos os [guards](../guards.md). Vamos alterar nossa implementação.
+Para isso não acontecer, precisamos de uma condição de parada, sendo a primeira coisa que definimos em nossa recursão. Nesse exemplo queremos que o X seja maior que 0. Essa é nossa condição. Para por isso em nossa função utilizaremos os [guards](guards.md). Vamos alterar nossa implementação.
 
 <pre class="language-elixir" data-title="lib/recursions.ex" data-line-numbers><code class="lang-elixir">defmodule Recursion do
   require Logger
@@ -165,7 +165,7 @@ Finished in 0.08 seconds (0.00s async, 0.08s sync)
 1 test, 0 failures
 ```
 
-Nosso relatório de teste nos trouxe sucesso. Tivemos então um looping em cima da função `print_loop/1`. Finalizando a recursão utilizando [guards](../guards.md).
+Nosso relatório de teste nos trouxe sucesso. Tivemos então um looping em cima da função `print_loop/1`. Finalizando a recursão utilizando [guards](guards.md).
 
 ### Utilizando head | tail
 

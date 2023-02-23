@@ -12,7 +12,7 @@ Só será executado o contexto de `if` caso a expressão seja verdadeira. Vamos 
 
 Precisamos de uma função que retorna se uma pessoa é maior de idade. Então expressão seria: `idade >= 18`. caso seja verdadeira, retorna `true`, case não, retorna `false`.
 
-Para estruturar nossa solução, iremos utiliza maps (caso não saiba o que é, de uma olhada no [capitulo de maps](../map.md)). Teremos no map o atributo `name` e o atributo `age`.&#x20;
+Para estruturar nossa solução, iremos utiliza maps (caso não saiba o que é, de uma olhada no [capitulo de maps](../mapas.md)). Teremos no map o atributo `name` e o atributo `age`.&#x20;
 
 Vamos ao nosso teste:
 

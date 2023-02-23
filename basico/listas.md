@@ -1,4 +1,4 @@
-# List
+# Listas
 
 Vamos diretamente a um exemplo prático.
 
@@ -390,7 +390,7 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 Criamos um teste que chama uma função `was_approved?/2`, onde o primeiro argumento é a lista de aprovados e o segundo argumento é uma `string` com o nome do estudante que queremos saber se foi aprovado.&#x20;
 
 {% hint style="info" %}
-O nome da função possui uma interrogação, dando a entender que queremos uma resposta de verdadeiro ou falso, isso é uma convenção que também adotamos no Elixir, você pode ver mais sobre isso no [capítulo de conveções](../../conceitos/convencoes.md#funcao-com-interrogacao).
+O nome da função possui uma interrogação, dando a entender que queremos uma resposta de verdadeiro ou falso, isso é uma convenção que também adotamos no Elixir, você pode ver mais sobre isso no [capítulo de conveções](../conceitos/convencoes.md#funcao-com-interrogacao).
 {% endhint %}
 
 Vamos resolver esse teste:

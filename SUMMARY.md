@@ -20,9 +20,11 @@
   * [Funções nomeadas convertidas para anônima](basico/funcoes/funcoes-nomeadas-convertidas-para-anonima.md)
 * [Atoms](basico/atoms.md)
 * [Pattern Matching](basico/pattern-matching.md)
-* [Tuples](basico/tuples.md)
-* [Map](basico/map.md)
+* [Tuplas](basico/tuplas.md)
+* [Mapas](basico/mapas.md)
 * [Estruturas](basico/estruturas.md)
+* [Listas](basico/listas.md)
+* [Recursão](basico/recursao.md)
 * [Pipes](em-breve/pipes.md)
 * [With](basico/with.md)
 * [Condicionais](basico/condicionais/README.md)
@@ -30,11 +32,9 @@
   * [cond](basico/condicionais/cond.md)
   * [case](basico/condicionais/case.md)
 * [Guards](basico/guards.md)
-* [Manipulação de dados](basico/manipulacao-de-dados/README.md)
-  * [List](basico/manipulacao-de-dados/list.md)
-  * [Recursão](basico/manipulacao-de-dados/recursao.md)
-  * [Enum](basico/manipulacao-de-dados/enum.md)
-  * [Stream](basico/manipulacao-de-dados/stream.md)
+* [Manipulação de dados](basico/listas/README.md)
+  * [Enum](basico/listas/enum.md)
+  * [Stream](basico/listas/stream.md)
 
 ## Conceitos
 

@@ -15,9 +15,9 @@ Essas são apenas algumas das muitas funções disponíveis no módulo `Enumerab
 
 Alguns dos módulos mais comuns que utilizam o protocolo Enumerable:
 
-* [Enum](../basico/manipulacao-de-dados/enum.md)
-* [Stream](../basico/manipulacao-de-dados/stream.md)
-* [List](../basico/manipulacao-de-dados/list.md)
+* [Enum](../basico/listas/enum.md)
+* [Stream](../basico/listas/stream.md)
+* [List](../basico/listas.md)
 * Range
 * MapSet
 

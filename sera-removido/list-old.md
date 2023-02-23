@@ -8,7 +8,7 @@ Eles servem basicamente para transportar uma coleção de dados. Em elixir temos
 * `List.last/1`
 * `List.delete/2`
 
-Listas utilizam o protocolo Enumerable, onde da suporte a diversas funções encontradas no módulo [enum](../basico/manipulacao-de-dados/enum.md). Também tendo a possibilidade da utilização de algumas funções do módulo Kernel.
+Listas utilizam o protocolo Enumerable, onde da suporte a diversas funções encontradas no módulo [enum](../basico/listas/enum.md). Também tendo a possibilidade da utilização de algumas funções do módulo Kernel.
 
 * [`++/2`](https://hexdocs.pm/elixir/1.12/Kernel.html#++/2)
 * [`--/2`](https://hexdocs.pm/elixir/1.12/Kernel.html#--/2)
