@@ -1,8 +1,8 @@
 # Coleções
 
-Em Elixir, uma **Collection** é uma estrutura de dados que armazena um conjunto de valores de maneira organizada e pode ser manipulada de várias formas. Por exemplo, uma [`lista`](../basico/list.md), um [`mapa`](../basico/map.md), um `conjunto`, uma [`tupla`](../basico/tuples.md) ou um `bitstring` são todos exemplos de `coleções` em Elixir. As coleções podem ser usadas para armazenar dados e fornecer uma maneira conveniente de acessá-los e manipulá-los. Entre eles temos:
+Em Elixir, uma **Collection** é uma estrutura de dados que armazena um conjunto de valores de maneira organizada e pode ser manipulada de várias formas. Por exemplo, uma [`lista`](../basico/manipulacao-de-dados/list.md), um [`mapa`](../basico/map.md), um `conjunto`, uma [`tupla`](../basico/tuples.md) ou um `bitstring` são todos exemplos de `coleções` em Elixir. As coleções podem ser usadas para armazenar dados e fornecer uma maneira conveniente de acessá-los e manipulá-los. Entre eles temos:
 
-* [Lista](../basico/list.md)
+* [Lista](../basico/manipulacao-de-dados/list.md)
 * [Tuplas](../basico/tuples.md)
 * [Mapas](../basico/map.md)
 

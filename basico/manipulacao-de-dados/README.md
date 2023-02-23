@@ -1,4 +1,4 @@
-# Listas
+# Manipulação de dados
 
 Listas são estruturas de dados que server para armazenar dados. Esses dados podem ser simples como tipos primitivos `integer`, `string`, `atom`, `string`. Mas também podem armazenar dados mais complexos como `estruturas`, `mapas e` outras `listas`.
 
@@ -6,5 +6,5 @@ Encontramos facilmente exemplos de onde utiliza-los. Seja em uma listagem de usu
 
 Possuímos dois tipos de lista e vamos entender melhor sobre elas nos próximos capítulos.
 
-* [List](../list.md)
+* [List](list.md)
 * [Stream](stream.md)

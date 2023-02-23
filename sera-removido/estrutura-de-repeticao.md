@@ -15,5 +15,5 @@ Em linguagem não funcionais, utilizamos estruturas de repetição como `foreach
 
 Para resolver esse problemas, Elixir utiliza outra forma de looping chamado recursão. Veremos a ideia da recursão e também algumas funções nativas do elixir que fazem o looping usando a mesma.
 
-* [Recursão](../basico/listas/recursao.md)
-* [Módulo Enum](../basico/listas/enum.md)&#x20;
+* [Recursão](../basico/manipulacao-de-dados/recursao.md)
+* [Módulo Enum](../basico/manipulacao-de-dados/enum.md)&#x20;

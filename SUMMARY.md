@@ -30,11 +30,11 @@
   * [cond](basico/condicionais/cond.md)
   * [case](basico/condicionais/case.md)
 * [Guards](basico/guards.md)
-* [Listas](basico/listas/README.md)
-  * [List](basico/list.md)
-  * [Recursão](basico/listas/recursao.md)
-  * [Enum](basico/listas/enum.md)
-  * [Stream](basico/listas/stream.md)
+* [Manipulação de dados](basico/manipulacao-de-dados/README.md)
+  * [List](basico/manipulacao-de-dados/list.md)
+  * [Recursão](basico/manipulacao-de-dados/recursao.md)
+  * [Enum](basico/manipulacao-de-dados/enum.md)
+  * [Stream](basico/manipulacao-de-dados/stream.md)
 
 ## Conceitos
 
