@@ -41,6 +41,7 @@
 * [Imutabilidade](conceitos/imutabilidade.md)
 * [Aridade](conceitos/aridade.md)
 * [Convenções](conceitos/convencoes.md)
+* [Coleções](conceitos/colecoes.md)
 * [Enumeráveis](conceitos/enumeraveis.md)
 
 ## Em breve
