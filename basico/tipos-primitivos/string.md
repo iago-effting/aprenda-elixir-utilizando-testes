@@ -1,6 +1,6 @@
 # String
 
-Em Elixir, uma string é uma sequência de caracteres delimitada por aspas duplas (" ") ou aspas simples (' '). Elas são criadas de forma simples. Basta apenas utilizares aspas simples ou duplas.
+Em Elixir, uma string é uma sequência de caracteres delimitada por aspas duplas (" ") ou aspas simples (' ').&#x20;
 
 Vamos a um exemplo.
 
