@@ -22,7 +22,7 @@
   * [String](basico/tipos-primitivos/string.md)
   * [Integer](basico/tipos-primitivos/integer.md)
   * [Float](basico/tipos-primitivos/float.md)
-  * [Atoms](basico/tipos-primitivos/atoms.md)
+  * [Atoms](basico/atoms.md)
   * [Bytes](basico/tipos-primitivos/bytes.md)
 * [Pattern Matching](basico/pattern-matching.md)
 * [Coleções](basico/colecoes/README.md)
