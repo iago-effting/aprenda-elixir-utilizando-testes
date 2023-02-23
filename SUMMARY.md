@@ -18,7 +18,12 @@
   * [Funções nomeadas](basico/funcoes/nomeadas.md)
   * [Funções anônimas](basico/funcoes/anonimas.md)
   * [Funções nomeadas convertidas para anônima](basico/funcoes/funcoes-nomeadas-convertidas-para-anonima.md)
-* [Atoms](basico/atoms.md)
+* [Tipos primitivos](basico/tipos-primitivos/README.md)
+  * [String](basico/tipos-primitivos/string.md)
+  * [Integer](basico/tipos-primitivos/integer.md)
+  * [Float](basico/tipos-primitivos/float.md)
+  * [Atoms](basico/tipos-primitivos/atoms.md)
+  * [Bytes](basico/tipos-primitivos/bytes.md)
 * [Pattern Matching](basico/pattern-matching.md)
 * [Coleções](basico/colecoes/README.md)
   * [Tuplas](basico/colecoes/tuplas.md)
@@ -44,7 +49,6 @@
 * [Imutabilidade](conceitos/imutabilidade.md)
 * [Aridade](conceitos/aridade.md)
 * [Convenções](conceitos/convencoes.md)
-* [Coleções](conceitos/colecoes.md)
 * [Enumeráveis](conceitos/enumeraveis.md)
 
 ## Em breve

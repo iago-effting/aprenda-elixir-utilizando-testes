@@ -1,6 +1,6 @@
 # Enumeráveis
 
-Os `Enumerables` são módulos em Elixir que fornecem uma série de funções para manipular [coleções](colecoes.md). As funções do módulo `Enumerables` permitem que você faça coisas como `filtrar`, `mapear`, `reduzir` e `classificar` [coleções](colecoes.md) de maneira eficiente. Essas funções são projetadas para trabalhar com qualquer tipo de coleção que implemente o protocolo `Enumerable`, que é implementado por muitas coleções em Elixir.
+Os `Enumerables` são módulos em Elixir que fornecem uma série de funções para manipular [coleções](broken-reference). As funções do módulo `Enumerables` permitem que você faça coisas como `filtrar`, `mapear`, `reduzir` e `classificar` [coleções](broken-reference) de maneira eficiente. Essas funções são projetadas para trabalhar com qualquer tipo de coleção que implemente o protocolo `Enumerable`, que é implementado por muitas coleções em Elixir.
 
 Ao usar as funções do módulo `Enumerables`, você pode escrever código mais conciso e legível do que ao manipular coleções manualmente usando loops. Por exemplo, em vez de escrever um loop para percorrer uma lista e executar uma determinada operação em cada elemento, você pode usar a função `Enum.map` para aplicar uma função a cada elemento da lista.
 
