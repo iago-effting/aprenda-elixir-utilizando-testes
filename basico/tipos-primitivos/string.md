@@ -1,6 +1,6 @@
 # String
 
-Em Elixir, uma string é uma sequência de caracteres delimitada por aspas duplas (" ") ou aspas simples (' ').&#x20;
+Em Elixir, uma string é uma sequência de caracteres delimitada por aspas duplas (" ") ou aspas simples (' '). Elas são criadas de forma simples. Basta apenas utilizares aspas simples ou duplas.
 
 Vamos a um exemplo.
 
@@ -15,7 +15,7 @@ Vamos a um exemplo.
 end
 </code></pre>
 
-Criamos uma `string` no exemplo anterior, utilizando aspas duplas e esperamos que ela seja igual ao texto `"Iago"` também com aspas duplas. Vamos rodar esse teste:
+Criamos uma `string` acima utilizando aspas duplas e esperamos que ela seja igual ao texto `"Iago"` também com aspas duplas. Vamos rodar esse teste:
 
 ```sh
 mix test test/my_name_test.exs
@@ -24,7 +24,7 @@ Finished in 0.01 seconds (0.00s async, 0.01s sync)
 1 test, 0 failures
 ```
 
-Tudo funcionando. Comentei mais acima que também podemos criar strings utilizando aspas simples (' '). Vamos dar uma olhada nisso:
+Tudo funcionando. Comentei mais acima que também podemos criar strings utilizando aspas simples (' '). Vamos dar uma olhada nisso.
 
 <pre class="language-elixir" data-title="test/my_name_test.exs" data-line-numbers><code class="lang-elixir">defmodule MyNameTest do
   use ExUnit.Case
@@ -80,12 +80,12 @@ Finished in 0.02 seconds (0.00s async, 0.02s sync)
 3 tests, 1 failure
 ```
 
-A há! Te pegamos. Mesmo os dois sendo considerados textos, o tipo retornado é diferente.&#x20;
+A há! Te pegamos. Mesmo os dois sendo considerados textos, os tipos deles são diferentes.&#x20;
 
-* Quando utilizamos aspas duplas (" ") o tipo retornado é um `binário`.&#x20;
+* Quando utilizamos aspas duplas (" ") o tipo de dado retornado é um `binário`.&#x20;
 * Enquanto que quando utilizado aspas simples (' ') temos um `charlist`
 
-Vamos alterar o teste para garantir que string com aspas simples é diferente de aspas duplas:
+Vamos alterar o teste para dizer que string com aspas simples é diferente de aspas duplas:
 
 <pre class="language-elixir" data-title="test/my_name_test.exs" data-line-numbers><code class="lang-elixir">defmodule MyNameTest do
   use ExUnit.Case
@@ -110,7 +110,7 @@ Finished in 0.02 seconds (0.00s async, 0.02s sync)
 3 tests, 0 failures
 ```
 
-Agora vamor provar que os tipos retornados são diferentes. Começando com aspas duplas. Vamos alterar o primeiro teste:
+Agora vamor provar que os tipos são diferentes, começando com aspas duplas. Vamos alterar o primeiro teste:
 
 <pre class="language-elixir" data-title="test/my_name_test.exs" data-line-numbers><code class="lang-elixir">defmodule MyNameTest do
   use ExUnit.Case
@@ -135,7 +135,7 @@ Finished in 0.02 seconds (0.00s async, 0.02s sync)
 3 tests, 0 failures
 ```
 
-Agora validaremos a `string` com aspas simples onde esperamos retornar um charlist. Em geral o charlist é uma lista. Então utilizaremos a função `is_list/1`.
+Agora validaremos a string com aspas simples onde volta um charlist.
 
 <pre class="language-elixir" data-title="" data-line-numbers><code class="lang-elixir">defmodule MyNameTest do
   use ExUnit.Case
@@ -166,13 +166,13 @@ Finished in 0.02 seconds (0.00s async, 0.02s sync)
 Isso se comprova verdadeiro.
 
 * Aspas duplas -> Retorna o tipo de dado binário
-* Aspas simples -> Retorna o tipo de dado lista
+* Aspas simples -> Retorna o tipo de dados lista
 
 Isso acontece porque as aspas simples (' ') são usadas para representar uma lista de caracteres individuais. Cada elemento da lista é um caractere Unicode de 1 byte, portanto, uma lista de caracteres pode ser vista como uma sequência de inteiros, onde cada inteiro representa um caractere.
 
-Por outro lado, as aspas duplas (" ") são usadas para criar uma `string`. Em Elixir, uma `string` é uma sequência de `bytes`, e cada caractere Unicode pode ser representado por vários bytes.
+Por outro lado, as aspas duplas (" ") são usadas para criar uma `string`. Em Elixir, uma `string` é uma sequência de `bytes`, e cada caractere Unicode pode ser representado por vários bytes. Logo, aspas duplas são usados para a criação de textos.
 
-### Escolhendo um tipo de retorno
+### Escolhendo um tipo
 
 A escolha entre o uso de `charlists` ou `strings` em Elixir dependerá do contexto em que estamos trabalhando e das necessidades específicas do problema em questão. Aqui estão algumas diretrizes gerais que podem ajudar na escolha:
 
