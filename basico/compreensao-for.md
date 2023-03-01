@@ -27,7 +27,7 @@ end
 
 </code></pre>
 
-Na linha 9 adicionamos uma confirmação de que teremos de resultado da operação `for` uma lista. Se assemelhando ao [Enum.map](../listas/enum.md#enum.map-2). Vamos rodar esse teste:
+Na linha 9 adicionamos uma confirmação de que teremos de resultado da operação `for` uma lista. Se assemelhando ao [Enum.map](listas/enum.md#enum.map-2). Vamos rodar esse teste:
 
 ```sh
 mix test test/numbers_test.exs       
@@ -268,7 +268,7 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 2 tests, 2 failures
 ```
 
-Duas falhas. Nosso teste esta pedindo que os valores retornados sejam multiplicado por e. com isso precisamos realizar uma transformação em nossa lista. Mas `Enum.filter/2` não serve para isso, ele serve apenas para filtrar. Quem faz transformações de um [enumerável](../../conceitos/enumeraveis.md) é o [`Enum.map`](../listas/enum.md#enum.map-2)`/2`. Vamos ter que obter o resultado do `Enum.filter/2`, para conseguir usar em um [`Enum.map/2`](../listas/enum.md#enum.map-2). Vamos implementar:
+Duas falhas. Nosso teste esta pedindo que os valores retornados sejam multiplicado por e. com isso precisamos realizar uma transformação em nossa lista. Mas `Enum.filter/2` não serve para isso, ele serve apenas para filtrar. Quem faz transformações de um [enumerável](../conceitos/enumeraveis.md) é o [`Enum.map`](listas/enum.md#enum.map-2)`/2`. Vamos ter que obter o resultado do `Enum.filter/2`, para conseguir usar em um [`Enum.map/2`](listas/enum.md#enum.map-2). Vamos implementar:
 
 {% code title="lib/numbers.ex" lineNumbers="true" %}
 ```elixir
