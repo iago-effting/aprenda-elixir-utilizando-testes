@@ -15,10 +15,10 @@ Vamos crianos nosso teste primeiro:
 <pre class="language-elixir" data-title="test/comprehensions_test.exs" data-line-numbers><code class="lang-elixir">defmodule ComprehensionsTest do
   use ExUnit.Case
 
-  test "just odd please" do
+  test "just pair please" do
     numbers = 1..10
     
-    result = Numbers.just_odd_please(numbers)
+    result = Numbers.just_pair_please(numbers)
 
 <strong>    assert is_list(result)
 </strong>    assert result == [2,4,6,8,10]  
@@ -31,17 +31,17 @@ Na linha 9 adicionamos uma confirmação de que teremos de resultado da operaç�
 
 ```sh
 mix test test/numbers_test.exs       
-warning: Numbers.just_odd_please/1 is undefined (module Numbers is not available or is yet to be defined)
-  test/numbers_test.exs:7: NumbersTest."test just odd please"/1
+warning: Numbers.just_pair_please/1 is undefined (module Numbers is not available or is yet to be defined)
+  test/numbers_test.exs:7: NumbersTest."test just pair please"/1
 
 
 
-  1) test just odd please (NumbersTest)
+  1) test just pair please (NumbersTest)
      test/numbers_test.exs:4
-     ** (UndefinedFunctionError) function Numbers.just_odd_please/1 is undefined (module Numbers is not available)
-     code: result = Numbers.just_odd_please(numbers)
+     ** (UndefinedFunctionError) function Numbers.just_pair_please/1 is undefined (module Numbers is not available)
+     code: result = Numbers.just_pair_please(numbers)
      stacktrace:
-       Numbers.just_odd_please(1..10)
+       Numbers.just_pair_please(1..10)
        test/numbers_test.exs:7: (test)
 
 
@@ -49,12 +49,12 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 1 test, 1 failure
 ```
 
-Como esperado, o relatório de erro nos trouxe que a função não existe. Vamos criar ela. Sua definição é `Numbers.just_odd_please/1`. Vamos replicar isso em nosso código
+Como esperado, o relatório de erro nos trouxe que a função não existe. Vamos criar ela. Sua definição é `Numbers.`just\_pair\_please`/1`. Vamos replicar isso em nosso código
 
 {% code title="lib/numbers.ex" lineNumbers="true" %}
 ```elixir
 defmodule Numbers do
-  def just_odd_please(_number_list) do
+  def just_pair_please(_number_list) do
     [2,4,6,8,10]
   end
 end
@@ -77,15 +77,15 @@ Certo, teste passando. Vamos adicionar uma nova lista, para garantir que tudo fu
 <pre class="language-elixir" data-title="test/numbers_test.exs" data-line-numbers><code class="lang-elixir">defmodule NumbersTest do
   use ExUnit.Case
 
-  test "just odd please" do
+  test "just pair please" do
     numbers = 1..10
     
-    result = Numbers.just_odd_please(numbers)
+    result = Numbers.just_pair_please(numbers)
 
     assert is_list(result)
     assert result == [2,4,6,8,10]
     
-<strong>    result2 = Numbers.just_odd_please(1..5)
+<strong>    result2 = Numbers.just_pair_please(1..5)
 </strong><strong>    assert result2 == [2,4]
 </strong>  end
 end
@@ -98,7 +98,7 @@ Fizemos uma nova chamada a função passando uma lista diferente que vai de 1 a 
 mix test test/numbers_test.exs
 
 
-  1) test just odd please (NumbersTest)
+  1) test just pair please (NumbersTest)
      test/numbers_test.exs:4
      Assertion with == failed
      code:  assert result == [2, 4]
@@ -115,7 +115,7 @@ Finished in 0.02 seconds (0.00s async, 0.02s sync)
 Temos uma resposta diferente do esperado, isso porque estamos com valores estáticos na resposta da função. Precisamos agora deixar mais dinâmica as coisas. Precisamos percorrer a lista e retornar somente valores pares. Podemos fazer isso utilizando um `Enum.filter/2`. Vamos tentar:
 
 <pre class="language-elixir" data-title="lib/numbers.ex" data-line-numbers><code class="lang-elixir">defmodule Numbers do
-  def just_odd_please(numbers_list) do
+  def just_pair_please(numbers_list) do
 <strong>    Enum.filter(numbers_list, fn number -> rem(number, 2) == 0 end)
 </strong>  end
 end
@@ -146,8 +146,8 @@ defmodule NumbersTest do
   use ExUnit.Case
 
   # ...
-  test "just odd please, until 10" do
-    result = Numbers.just_odd_please(1..40)
+  test "just pair please, until 10" do
+    result = Numbers.just_pair_please(1..40)
 
     assert is_list(result)
     assert result == [2,4,6,8,10]
@@ -164,7 +164,7 @@ mix test test/numbers_test.exs
 Compiling 1 file (.ex)
 
 
-  1) test just odd please, until 10 (NumbersTest)
+  1) test just pair please, until 10 (NumbersTest)
      test/numbers_test.exs:16
      Assertion with == failed
      code:  assert result == [2, 4, 6, 8, 10]
@@ -181,7 +181,7 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 Queriamos os números até 10. Mas temos a resposta dos pares com valores até 40. Então um relatório de erro foi mostrado. Vamos arrumar isso.
 
 <pre class="language-elixir" data-title="lib/numbers.ex" data-line-numbers><code class="lang-elixir">defmodule Numbers do
-  def just_odd_please(numbers_list) do
+  def just_pair_please(numbers_list) do
     Enum.filter(numbers_list, fn number ->
 <strong>      if number > 10, do: false, else: rem(number, 2) == 0
 </strong>    end)
@@ -215,20 +215,20 @@ Vamos alterar nossos testes:
 defmodule NumbersTest do
   use ExUnit.Case
 
-  test "just odd please" do
-    result = Numbers.just_odd_please(1..10)
+  test "just pair please" do
+    result = Numbers.just_pair_please(1..10)
 
     assert is_list(result)
     assert result == [6,12,18,24,30]
 
-    result2 = Numbers.just_odd_please(1..5)
+    result2 = Numbers.just_pair_please(1..5)
 
     assert is_list(result2)
     assert result2 == [6,12]
   end
 
-  test "just odd please, until 10" do
-    result = Numbers.just_odd_please(1..40)
+  test "just pair please, until 10" do
+    result = Numbers.just_pair_please(1..40)
 
     assert is_list(result)
     assert result == [6,12,18,24,30]
@@ -243,7 +243,7 @@ Vamos rodar o teste:
 mix test test/numbers_test.exs
 
 
-  1) test just odd please (NumbersTest)
+  1) test just pair please (NumbersTest)
      test/numbers_test.exs:4
      Assertion with == failed
      code:  assert result == [6, 12, 18, 24, 30]
@@ -254,7 +254,7 @@ mix test test/numbers_test.exs
 
 
 
-  2) test just odd please, until 10 (NumbersTest)
+  2) test just pair please, until 10 (NumbersTest)
      test/numbers_test.exs:16
      Assertion with == failed
      code:  assert result == [6, 12, 18, 24, 30]
@@ -273,7 +273,7 @@ Duas falhas. Nosso teste esta pedindo que os valores retornados sejam multiplica
 {% code title="lib/numbers.ex" lineNumbers="true" %}
 ```elixir
 defmodule Numbers do
-  def just_odd_please(numbers_list) do
+  def just_pair_please(numbers_list) do
     list_filtered = Enum.filter(numbers_list, fn number ->
       if number > 10, do: false, else: rem(number, 2) == 0
     end)
@@ -340,7 +340,7 @@ Vamos voltar ao exemplo
 Não precisamos mais tocar no teste, uma vez que toda a regra de negócio está refletida lá. O que precisamos agora é deixar nosso implementação melhor, vamos lá:
 
 <pre class="language-elixir"><code class="lang-elixir">defmodule Numbers do
-  def just_odd_please(numbers_list) do
+  def just_pair_please(numbers_list) do
 <strong>    for number &#x3C;- numbers_list, rem(number, 2) == 0 &#x26;&#x26; number &#x3C;= 10  do
 </strong><strong>      number * 3
 </strong><strong>    end
