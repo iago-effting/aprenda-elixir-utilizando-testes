@@ -122,7 +122,7 @@ end
 
 </code></pre>
 
-Utilizamos `filter/2` para conseguir fazer essa operação. Seguinda ideia de que um número par deve ter como resto de divisão por 2 o valor 0. A função `rem/2` pega o resto da operação (casas decimais) e converte para `integer`. Uma vez que for 0 o valor é par. Em `Enum.filter/2` uma vez que seja true o valor, o elemento ficará na lista, quando for falso, será removido. Vamos rodar o teste:
+Utilizamos `Enum.filter/2` para conseguir fazer essa operação. Seguinda ideia de que um número par deve ter como resto de divisão por 2 o valor 0. A função `rem/2` pega o resto da operação (casas decimais) e converte para `integer`. Uma vez que for 0 o valor é par. Em `Enum.filter/2` uma vez que seja true o valor, o elemento ficará na lista, quando for falso, será removido. Vamos rodar o teste:
 
 ```sh
 mix test test/numbers_test.exs
@@ -192,7 +192,7 @@ end
 
 Adicionamos uma nova validação em nosso filtro. Uma condição if em que o número que for maior que 10, deve voltar `false` e com isso, não entrar na lista.
 
-O código ficou um pouco mais confuso, mas vamos continuar. Vamos rodar o teste:
+Vamos rodar o teste:
 
 ```sh
 mix test test/numbers_test.exs
@@ -268,7 +268,7 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 2 tests, 2 failures
 ```
 
-Duas falhas. Nosso teste esta pedindo que os valores retornados sejam multiplicado por e. com isso precisamos realizar uma transformação em nossa lista. Mas `Enum.filter/2` não serve para isso, ele serve apenas para filtrar. Quem faz transformações de um [enumerável](../../conceitos/enumeraveis.md) é o [`Enum.map`](../listas/enum.md#enum.map-2)`/2`. Vamos ter que obter o resultado do `Enum.filter/2`, para conseguir usar em um [`Enum.map/2`](../listas/enum.md#enum.map-2). As coisas começaram a ficar um pouco mais bagunçadas aqui. Mas vamos seguir.
+Duas falhas. Nosso teste esta pedindo que os valores retornados sejam multiplicado por e. com isso precisamos realizar uma transformação em nossa lista. Mas `Enum.filter/2` não serve para isso, ele serve apenas para filtrar. Quem faz transformações de um [enumerável](../../conceitos/enumeraveis.md) é o [`Enum.map`](../listas/enum.md#enum.map-2)`/2`. Vamos ter que obter o resultado do `Enum.filter/2`, para conseguir usar em um [`Enum.map/2`](../listas/enum.md#enum.map-2). Vamos implementar:
 
 {% code title="lib/numbers.ex" lineNumbers="true" %}
 ```elixir
@@ -287,7 +287,9 @@ end
 ```
 {% endcode %}
 
-Colocamos a lista filtrada em uma variável chamada `list_filtered`. Depois utilizamos o `Enum.map/2` para realizar a transformação, passando `list_filtered` como primeiro argumento e o segundo a função de transformação, obtendo o valor de um número e multiplicando por 3. Relativamente simples o código adicional, porém, precisamos utilizar duas funções, uma variável, if encadeado com rem em uma linha só. Mas seguimos. Vamos executar o teste para ver como estamos:
+Colocamos a lista filtrada em uma variável chamada `list_filtered`. Depois utilizamos o `Enum.map/2` para realizar a transformação, passando `list_filtered` como primeiro argumento e o segundo a função de transformação, obtendo o valor de um número e multiplicando por 3.&#x20;
+
+Vamos executar o teste para ver como estamos:
 
 ```sh
 mix test test/numbers_test.exs
@@ -304,9 +306,9 @@ Conseguimos realizar todas as regras de negócio que precisamos.
 * ~~Também queremos apenas os numeros entre 0 e 10~~
 * ~~Valores restantes na lista devem ser multiplicados por 3~~
 
-Mas em um problema relativamente simples, temos um código meio confuso. Claro, podemos extrair as funções, mas isso seria estranho ja que quase não temos regras nossa e sim,  funções do próprio elixir.
+Mas em um problema relativamente simples, temos um código maior. Não é necessariamente um problema, o código é claro e fácil de entender após lermos com atenção. Porém, existe uma forma de resumir isso caso você queira. Chamamos isso de sintaxy sugar.
 
-Por sorte, em elixir temos a syntax sugar chamada Comprehension que é criado em três partes: filtro, transformação e coleção. Justamente o que precisamos agora. Uma explicação rápida:
+Em elixir temos a syntax sugar chamada `Comprehension` que é criado em três partes: filtro, transformação e coleção. Justamente o que precisamos agora. Uma explicação rápida:
 
 ### Compreensão
 
@@ -363,5 +365,7 @@ Perfeito, refatoramos de forma a ficar mais claro e fácil de entender. Mantivem
 
 ### Conclusão
 
-Compreensão pode ser útil para ajudar na legibidade de nosso código. Mesmo tendo funções que podem ser utilizadas e ter o mesmo resultado, precisamos também considerar a manutenabilidade de nosso código e quanto mais legível, melhor.
+Compreensão pode ser útil para diminuir o tamanho de nosso código. Porém isso pode causar problemas de legibilidade, então, minha dica é: entendam o que vocês precisam no momento e tomem uma decisão conciente. Tanto um quanto o outro estão corretos.
+
+
 
