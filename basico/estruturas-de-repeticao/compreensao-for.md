@@ -1,29 +1,6 @@
 # Compreensão (for)
 
-Compreensões em Elixir são uma forma concisa e expressiva de criar, filtrar, transformar e combinar coleções em uma única linha de código. As compreensões em Elixir são inspiradas nas compreensões de listas em Python e nas expressões de conjunto em matemática.
-
-Uma compreensão é composta por três partes principais:
-
-* A cláusula `for`: que especifica uma ou mais variáveis e as expressões que geram os valores para essas variáveis.
-
-```elixir
-for n <- 1..10
-```
-
-* A cláusula `do`: que define as transformações a serem aplicadas a cada valor gerado pela cláusula `for`.
-
-```elixir
-for n <- 1..10, do: n*n
-```
-
-* Opcionalmente, cláusulas adicionais, como `if` ou `unless`, que filtram os valores gerados pela cláusula `for`.
-
-```elixir
-for n <- 1..10, rem(n, 2), do: n*n # usando if
-for n <- 1..10, unless rem(n, 2) == 0, do: n # usando unless
-```
-
-Vamos a um exemplo real
+Vamos começar um pouco diferente nesse capítulo. Vamos direto para o exemplo e ver a necessidade aparecer com o tempo e assim, explicar melhor o conceito de compreensão.&#x20;
 
 ### Exemplo
 
