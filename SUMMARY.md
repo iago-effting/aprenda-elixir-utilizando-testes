@@ -31,6 +31,7 @@
   * [Listas](basico/colecoes/listas.md)
 * [Estruturas de repetição](basico/estruturas-de-repeticao/README.md)
   * [Recursão](basico/estruturas-de-repeticao/recursao.md)
+  * [Compreensão (for)](basico/estruturas-de-repeticao/compreensao-for.md)
 * [Controle de fluxo](basico/controle-de-fluxo/README.md)
   * [Pipes](basico/controle-de-fluxo/pipes.md)
   * [With](basico/controle-de-fluxo/with.md)
