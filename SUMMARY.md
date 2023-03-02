@@ -54,8 +54,3 @@
 ## Em breve
 
 * [Let it crash (Deixe quebrar)](em-breve/let-it-crash-deixe-quebrar.md)
-
-## Será removido
-
-* [List - old](sera-removido/list-old.md)
-* [Estrutura de repetição](sera-removido/estrutura-de-repeticao.md)
