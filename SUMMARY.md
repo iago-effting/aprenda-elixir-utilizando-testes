@@ -50,7 +50,3 @@
 * [Aridade](conceitos/aridade.md)
 * [Convenções](conceitos/convencoes.md)
 * [Enumeráveis](conceitos/enumeraveis.md)
-
-## Em breve
-
-* [Let it crash (Deixe quebrar)](em-breve/let-it-crash-deixe-quebrar.md)
