@@ -1,6 +1,6 @@
 # Linguagem
 
-ir é uma linguagem dinâmica e funcional. Ela foi projetada para a construção de aplicações escaláveis e de fácil manutenção, possuindo um cinto de utilidades moderno e uma base cientifica refinada.&#x20;
+Elixir é uma linguagem dinâmica e funcional. Ela foi projetada para a construção de aplicações escaláveis e de fácil manutenção, possuindo um cinto de utilidades moderno e uma base cientifica refinada.&#x20;
 
 Dito isso, podemos ressaltar que foi criado pelo brasileiro [José Valim](https://twitter.com/josevalim) que está sempre atualizando o progresso da linguagem e fazendo lives na [twitch](https://t.co/8zKj1end4a), sendo um bom recurso de aprendizado.
 
