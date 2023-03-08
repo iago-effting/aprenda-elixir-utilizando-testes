@@ -1,14 +1,14 @@
 # Ferramenta Mix
 
-Linguagens modernas possuem um toolset que nos facilita a vida, possibilitando um ecossistema que nos ajuda na tarefa do dia-a-dia. A primeira ferramenta que você deve ter conhecimento é chamada [mix](https://hexdocs.pm/mix/Mix.html) e tem como principal propósito: gerenciar seu projeto.&#x20;
+Linguagens modernas possuem um toolset que nos facilita a vida, possibilitando um ecossistema que nos ajuda nas tarefas do dia-a-dia. A primeira ferramenta que você deve conhecer é a ferramenta [mix](https://hexdocs.pm/mix/Mix.html) e tem como principal propósito: gerenciar seu projeto.&#x20;
 
 Ela tem o poder de:
 
-* Criar projetos elixir;
+* Criar projetos Elixir;
 * Gerenciar dependências;
-* Rodar scripts elixir
+* Rodar scripts Elixir
 
-Uma vez com a linguagem instalada ([já ensinado em etapas anteriores](instalacao.md)), você tera acesso ao mix por linha de comando.
+Uma vez com a linguagem instalada ([já ensinado em etapas anteriores](instalacao.md)), você terá acesso ao mix por linha de comando.
 
 ```shell
 $ mix 
