@@ -73,11 +73,11 @@ end
 ```
 {% endcode %}
 
-Por padrão, elixir traz o `ExUnit` como ferramenta de teste. Obtemos capacidades de teste quando adicionamos o código use `ExUnit.Case` em nosso arquivo, dando suporte a funções de `test`, **** `assert`, **** `describe` e outros.
+Por padrão, Elixir traz o `ExUnit` como ferramenta de teste. Obtemos capacidades de teste quando adicionamos o código `use ExUnit.Case` em nosso arquivo, dando suporte a funções como `test`, **** `assert`, **** `describe` e outros.
 
 O código é bem autoexplicativo, temos uma teste chamado _"greets the world"_ nele temos uma afirmação onde a resposta de `HelloWorld.hello()` deve ser igual a `:world` caso isso não ocorra, um erro será disparado.
 
-Para rodar esse teste, podemos executar o comando onde executa todos os testes de uma vez ou somente um arquivo especifico. Vamos executar todos de uma vez:
+Para rodar esse teste, podemos executar o comando que executa todos os testes de uma vez ou somente um arquivo especifico. Vamos executar todos de uma vez:
 
 ```shell
 mix test
@@ -121,10 +121,10 @@ Finished in 0.03 seconds (0.00s async, 0.03s sync)
 1 test, 1 failure
 ```
 
-No seu terminal terá cores melhores, em vermelho e verde, mas aqui já da de ter noção da resposta e também o que está incorreto. Vamos voltar agora o teste para tudo voltar a funcionar.
+No seu terminal terá cores melhores, em vermelho e verde, mas aqui já da para ter noção da resposta e também o que está incorreto. Vamos corrigir agora o teste para tudo voltar a funcionar.
 
-Os testes em elixir funcionam assim. São de extrema importância e simples de serem usados.
+Os testes em Elixir funcionam assim. São de extrema importância e simples de serem usados.
 
 ### Conclusão
 
-Teste é uma ferramentas importante no desenvolvimento de software, nos ajudando a garantir o comportamento de nossos códigos. Nós próximos capítulos iremos conhecer mais da linguagem por meio do teste, para já termos uma base boa de como as coisas funcionam. Espero ver vocês por lá.
+Teste é uma ferramentas importante no desenvolvimento de software, nos ajudando a garantir o comportamento de nossos códigos. Nós próximos capítulos iremos conhecer mais da linguagem por meio do teste, para já temos uma base boa de como as coisas funcionam. Espero ver vocês por lá.
