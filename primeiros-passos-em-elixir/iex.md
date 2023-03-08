@@ -1,6 +1,6 @@
 # IEx
 
-O iEx é um shell iterativo onde você pode executar comando elixir. Vamos abrir nosso terminal e executar o comando `iex`.
+O iEx é um shell iterativo onde você pode executar comandos Elixir. Vamos abrir nosso terminal e executar o comando `iex`.
 
 ```elixir
 iex
@@ -12,7 +12,7 @@ iex(1)>
 
 Temos diversas informações interessantes sobre sua maquina, quando processos ela suporte, arquitetura e outras coisas. Mas vamos nos ater ao simples.&#x20;
 
-Uma vez com o `iex` aberto podemos rodar qualquer tipo de comando elixir. Por exemplo, eu quero imprimir na tela o meu nome.
+Uma vez com o `iex` aberto podemos rodar qualquer tipo de comando Elixir. Por exemplo, eu quero imprimir na tela o meu nome.
 
 ```
 iex(1)> "Effting"
@@ -24,7 +24,7 @@ Ou quero inverter esse texto
 {% hint style="info" %}
 **Autocomplete**\
 \
-IEx tem função de autocomplete, podendo escrever pedaço da palavra e apertar em tab, ela irá dar as opções para você. Tanto as nativas do elixir quanto criadas por você.
+IEx tem função de autocomplete, podendo escrever pedaço da palavra e apertar em tab, ela irá dar as opções para você. Tanto as nativas do Elixir quanto criadas por você.
 {% endhint %}
 
 ```
@@ -32,7 +32,7 @@ iex(2)> String.reverse("̀Effting")
 "gnitffe"
 ```
 
-Você pode usar qualquer tipo de função que existe no elixir no iex, isso ajuda muito na hora de debugar o código.
+Você pode usar qualquer tipo de função que existe no Elixir no iex, isso ajuda muito na hora de debugar o código.
 
 {% hint style="info" %}
 Caso tenha mais interesse em debugging tenho um vídeo no canal\
@@ -58,9 +58,9 @@ Eu executei dentro do projeto [`hello_world`](meu-hello-world.md) e como você p
 
 ### Arquivo .iex.exs
 
-Uma das melhores coisas a se conhecer é o arquivo `.iex.exs`. De início você pode não precisar, mas quando o projeto começar a ficar maior ou os tipoes de dados mais complexas, você vai querer um solução que esse arquivo proporciona.
+Uma das melhores coisas a se conhecer é o arquivo `.iex.exs`. De início você pode não precisar, mas quando o projeto começar a ficar maior ou os tipos de dados mais complexas, você vai querer um solução que esse arquivo proporciona.
 
-Quando inicamos uma sessão usitlizando `iex`, a ferramenta procura por um arquivo local chamado `.iex.exs`, normalmente criado no root do projeto, lado-a-lado do `mix.ex`. Então depois procura por um global localizado em `~/.iex.exs` carregando o primeiro que encontrar, dando sempre preferencia para o arquivo local do projeto.
+Quando inicamos uma sessão utilizando o `iex`, a ferramenta procura por um arquivo local chamado `.iex.exs`, normalmente criado no root do projeto, lado-a-lado do `mix.ex`. Então depois procura por um global localizado em `~/.iex.exs` carregando o primeiro que encontrar, dando sempre preferencia para o arquivo local do projeto.
 
 Tudo que está dentro desse arquivo é carregado para o contexto do IEx. Tudo que for criado ali vai ser carregado na sessão. Seja uma [map](../basico/colecoes/mapas.md), uma [estrutura](../basico/colecoes/estruturas.md) ou um [modulo](../basico/modulos.md).&#x20;
 
