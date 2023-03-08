@@ -41,11 +41,11 @@ hello_world/
 ├─ README.md
 ```
 
-O **mix.exs** é nosso manifesto, é ali que iremos definir tudo que será utilizado. Nome do projeto, versão, suas dependências e como será executado. A criação do projeto pelo mix nos facilita a etapa de configuração de projeto, saindo pronto para rodar, sem maiores complicações.
+O **mix.exs** é nosso manifesto, é neste arquivo onde iremos definir tudo que será utilizado. Nome do projeto, versão, suas dependências e como será executado. A criação do projeto pelo mix nos facilita a etapa de configuração de projeto, saindo pronto para rodar, sem maiores complicações.
 
 ### Dependências
 
-Todas as dependências vem de um local chamada [hex](https://hex.pm/), o que facilita a inserção e atualização de  bibliotecas no projeto. Elas são definidas dentro do arquivo **mix.exs** na função **deps**. Se algo estiver lá, sera gerido a dependencias de como foi configurada e adicionado ao projeto na pasta `deps` gerada na raiz do projeto, após rodar o comando para baixar as dependências. Para baixar as dependências basta rodar o comando `mix deps.get` .
+Todas as dependências vêm de um local chamado [hex](https://hex.pm/), o que facilita a inserção e atualização de  bibliotecas no projeto. Elas são definidas dentro do arquivo **mix.exs** na função **deps**. Se algo estiver lá, será instalado como dependência e adicionado ao projeto na pasta `deps` gerada na raiz do projeto, após rodar o comando para baixar as dependências. Para baixar as dependências basta rodar o comando `mix deps.get` .
 
 ```
 mix deps.get
