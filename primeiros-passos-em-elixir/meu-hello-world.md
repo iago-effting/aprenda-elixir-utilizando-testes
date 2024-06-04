@@ -73,7 +73,7 @@ end
 ```
 {% endcode %}
 
-Por padrão, elixir traz o `ExUnit` como ferramenta de teste. Obtemos capacidades de teste quando adicionamos o código use `ExUnit.Case` em nosso arquivo, dando suporte a funções de `test`, **** `assert`, **** `describe` e outros.
+Por padrão, elixir traz o `ExUnit` como ferramenta de teste. Obtemos capacidades de teste quando adicionamos o código use `ExUnit.Case` em nosso arquivo, dando suporte a funções de `test`, `assert`, `describe` e outros.
 
 O código é bem autoexplicativo, temos uma teste chamado _"greets the world"_ nele temos uma afirmação onde a resposta de `HelloWorld.hello()` deve ser igual a `:world` caso isso não ocorra, um erro será disparado.
 
@@ -99,7 +99,8 @@ Caso a resposta esteja diferente do esperado, você poderá ver o erro no relat�
   test "greets the world" do
 <strong>    assert HelloWorld.hello() == :new_world
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 Basta agora rodar o teste e verificar o relatório:
 

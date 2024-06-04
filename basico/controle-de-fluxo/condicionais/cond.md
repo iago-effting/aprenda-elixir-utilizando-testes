@@ -587,10 +587,10 @@ Simples assim, fechamos mais um critério de aceite.\
 **Desafio**\
 \
 Tente adicionar o level 3 para dar matching na frase: **Sr. {nome}, já mandamos Nemesis para Raccoon city.**\
-****\
-****Você deve:\
-****\
-****1. Escrever o teste em authorizatin\_test.exs\
+\
+Você deve:\
+\
+1\. Escrever o teste em authorizatin\_test.exs\
 2\. Implementar a solução em authorization.ex
 {% endhint %}
 

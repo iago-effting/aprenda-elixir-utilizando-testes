@@ -16,9 +16,14 @@ Preciso de energia para escrever, e você pode me pagar o café. Vou disponibili
 
 <div align="left">
 
-<figure><img src="broken-reference" alt="" width="217"><figcaption><p>QR para PIX</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10).png" alt="" width="217"><figcaption><p>Código QR</p></figcaption></figure>
 
 </div>
+
+Nome: Iago Effting\
+Banco: Inter
+
+
 
 ### Seguindo minhas redes e compartilhando o conteúdo
 

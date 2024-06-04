@@ -30,7 +30,7 @@ No exemplo acima, a `funcao_1` recebe o `argumento_1,` a `funcao_2` recebe a res
 
 {% hint style="info" %}
 **Aridade em funções**\
-****
+
 
 Se a aridade de uma função for maior do que `1`, Utilize parênteses. Elixir não se importa com isso, mas, é importante para outros programadores, pois podem interpretar mal o seu código. \
 
@@ -83,7 +83,8 @@ Vamos começar sem a utilização de `pipes`. Para isso adicionarei um parâmetr
     
 <strong>    assert Calculator.crazy_rule(value, :without_pipe) == 25
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 ```shell
 mix test test/calculator_test.exs
@@ -183,7 +184,8 @@ Vamos agora criar utilizando pipes.
     
 <strong>    assert Calculator.crazy_rule(value, :with_pipes) == 25
 </strong>  end
-end</code></pre>
+end
+</code></pre>
 
 Adicionando a função utilizando `pipes`:
 
@@ -206,7 +208,8 @@ Adicionando a função utilizando `pipes`:
   defp sum(current_value, value), do: current_value + value
   defp multiple(current_value, value), do: current_value * value
   defp decrease(current_value, value), do: current_value - value
-end</code></pre>
+end
+</code></pre>
 
 Execute os testes novamente
 

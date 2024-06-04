@@ -114,7 +114,7 @@ Elixir é uma linguagem que utiliza o [conceito de  imutabilidade](../../conceit
 
 `new_data = %{data | name: "Elixir"}`
 
-``\
+\
 `a variáveldata` nunca será alterará, se quiser usar o valor novo, precisamos substituir o antigo pelo novo, onde perderemos tudo do valor inicial.&#x20;
 {% endhint %}
 

@@ -4,14 +4,14 @@ A função é o principal elemento das linguagens funcionais (grande surpresa an
 
 {% hint style="info" %}
 **Aridade**\
-****\
-****De forma simples, a [aridade](../../conceitos/aridade.md) é a quantidade de argumentos que uma função recebe.
+\
+De forma simples, a [aridade](../../conceitos/aridade.md) é a quantidade de argumentos que uma função recebe.
 
 Uma função `login` que recebe `user` e `password` por parâmetro tem aridade 2 e é representado com o nome da função, barra (/) e o número da aridade. Exemplo:\
 \
 `login(user, password) -> login/2`\
-``\
-``Veja mais no [capítulo de Aridade](../../conceitos/aridade.md)
+\
+Veja mais no [capítulo de Aridade](../../conceitos/aridade.md)
 {% endhint %}
 
 Funções nomeadas devem existir somente dentro de módulos e são declaradas com `def/2` e `defp/2` para funções privadas. Como por exemplo:
@@ -168,7 +168,7 @@ Quando temos parâmetros e não o utilizamos, o interpretador nos emite um aviso
 \
 `warning: variable "y" is unused (if the variable is not meant to be used, prefix it with an underscore) lib/math.ex:2: Math.sum/2`
 
-``
+
 
 Para esse aviso sumir, podemos colocar como prefixo o underline (\_) e ele irá ignorar essa validação.
 

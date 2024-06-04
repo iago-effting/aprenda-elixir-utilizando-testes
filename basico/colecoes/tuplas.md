@@ -31,7 +31,7 @@ Você verá muito pela comunidade elixir o padrão de utilização de tuplas par
 
 Ao lidar com tuplas, temos algumas funções para nos ajudar
 
-* ``[`Tuple.insert_at/2`](https://hexdocs.pm/elixir/1.12/Tuple.html#insert\_at/3) - Inserir valor ao final da tuple
+* [`Tuple.insert_at/2`](https://hexdocs.pm/elixir/1.12/Tuple.html#insert\_at/3) - Inserir valor ao final da tuple
 * [`elem/2`](https://hexdocs.pm/elixir/1.12/Kernel.html#elem/2) - Acessar a tupla por um indice
 * [`put_elem/3`](https://hexdocs.pm/elixir/1.12/Kernel.html#put\_elem/3) - Substituir o valor de um elemento da tupla por um indice
 * [`tuple_size/1`](https://hexdocs.pm/elixir/1.12/Kernel.html#tuple\_size/1) - obter número de elementos na tupla

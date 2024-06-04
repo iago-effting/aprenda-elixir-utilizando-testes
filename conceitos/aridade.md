@@ -127,7 +127,7 @@ end
 </code></pre>
 
 {% hint style="warning" %}
-****[**assert\_raise**](https://hexdocs.pm/ex\_unit/ExUnit.Assertions.html#assert\_raise/2)&#x20;
+[**assert\_raise**](https://hexdocs.pm/ex\_unit/ExUnit.Assertions.html#assert\_raise/2)&#x20;
 
 Ele é uma função auxiliadora do `ExUnit` que captura uma exceção, assim podemos criar testes que esperamos que uma implementação falhe quando algo sai do esperado. Algumas vezes esse caso é necessário.
 {% endhint %}
