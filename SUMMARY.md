@@ -2,6 +2,7 @@
 
 * [Introdução](README.md)
 * [Sobre o autor](sobre-o-autor.md)
+* [O valor desse livro](o-valor-desse-livro.md)
 
 ## Primeiros passos em Elixir
 
